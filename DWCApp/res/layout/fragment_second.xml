@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:layout_height="match_parent" tools:context="fragment.Visa.Renew.SecondFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Monthly Salary (AED)"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                     />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/MonthlySalary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_edit_text_background"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Monthly Allowance (AED)"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                     />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/MonthlyAllowance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_edit_text_background"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Occupation"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/Occupation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/spinner_background"
+                android:gravity="center" />
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Qualification"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/Qualification"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/spinner_background"
+                android:gravity="center" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Urgent Stamping (AED 250)"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                     />
+
+            </LinearLayout>
+
+            <com.gc.materialdesign.views.Switch
+                android:id="@+id/UrgentStamping"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/dwc_blue_color"
+                materialdesign:check="false" />
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

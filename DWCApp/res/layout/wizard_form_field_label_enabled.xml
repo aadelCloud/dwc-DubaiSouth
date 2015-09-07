@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/label"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/formFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Personal Information"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/formFieldLabelrequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:gravity="top"
+        android:visibility="gone"
+        android:text="*"
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/formFieldvalue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/light_grey"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/search_edit_text_background" />
+
+</RelativeLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Passport holder"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/passportholder"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Old passport number"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                 />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/oldpassportnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="New passport no"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/newpassportno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="New Issue Date"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/dateofissue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="New Expiry Date"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/dateofexpiry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="New Place of issue"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                 />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/placeofissue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Country of Issue"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                 />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/countryofissue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edit_text_background"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<servers>
+    <server
+        name="Production"
+        url="https://test-dwc.cs14.force.com/portal" />
+    <server
+        name="Sandbox"
+        url="https://test.salesforce.com" />
+</servers>

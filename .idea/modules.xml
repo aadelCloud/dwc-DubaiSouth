@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DWC.iml" filepath="$PROJECT_DIR$/DWC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DWCApp/DWCApp.iml" filepath="$PROJECT_DIR$/DWCApp/DWCApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" filepath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/external/cordova/cordova.iml" filepath="$PROJECT_DIR$/forcedroid/external/cordova/cordova.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/external/external.iml" filepath="$PROJECT_DIR$/forcedroid/external/external.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/forcedroid.iml" filepath="$PROJECT_DIR$/forcedroid/forcedroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/external/cordova/framework/framework.iml" filepath="$PROJECT_DIR$/forcedroid/external/cordova/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/libs.iml" filepath="$PROJECT_DIR$/forcedroid/libs/libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" filepath="$PROJECT_DIR$/nineoldandroids-2.4.0/nineoldandroids-2.4.0.iml" />
+    </modules>
+  </component>
+</project>

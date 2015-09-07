@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/header_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/header_menu_button"
+            android:background="@drawable/header_slide_menu_icon" />
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/header_menu_button"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnNotifications"
+            android:layout_toRightOf="@+id/imageMenu"
+            android:gravity="center"
+            android:text="ndfiwnidwi"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <custom.BadgeButton
+            android:id="@+id/btnNotifications"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/header_menu_button"
+            android:background="@drawable/nav_notification"
+            android:textColor="@color/white"></custom.BadgeButton>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnTransparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/tabBar"
+        layout="@layout/tab_bar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabBar"
+        android:layout_below="@+id/header">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/dwc_blue_color"
+            android:choiceMode="singleChoice"
+            android:divider="@color/white"
+            android:dividerHeight="1dp" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

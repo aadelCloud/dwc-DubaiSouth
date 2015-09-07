@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <!--     <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="163dp"
+            android:src="@drawable/image_splash" />
+
+        <customFonts.CalifornianBoldTextView
+            android:id="@+id/californianBoldTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome To"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <customFonts.CorisandeLightTextView
+            android:id="@+id/corisandeLightTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/californianBoldTextView1"
+            android:layout_below="@+id/californianBoldTextView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:gravity="center_horizontal"
+            android:text="DWC SMART SERVICES"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" /> -->
+
+</RelativeLayout>

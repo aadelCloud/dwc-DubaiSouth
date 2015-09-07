@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <custom.MaterialSpinner
+        android:id="@+id/spinnerCardType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/spinner_background"
+        android:gravity="center"
+        app:ms_alignLabels="false"
+        app:ms_arrowColor="@color/noc_grey"
+        app:ms_arrowSize="16dp"
+        app:ms_baseColor="@color/black"
+        app:ms_errorColor="@color/error_color"
+        app:ms_floatingLabelColor="@color/black"
+        app:ms_highlightColor="@color/noc_grey"
+        app:ms_hint="Card Type"
+        app:ms_multiline="false" />
+
+    <custom.MaterialSpinner
+        android:id="@+id/spinnerDurationValues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/spinner_background"
+        android:gravity="center"
+        app:ms_alignLabels="false"
+        app:ms_arrowColor="@color/noc_grey"
+        app:ms_arrowSize="16dp"
+        app:ms_baseColor="@color/black"
+        app:ms_errorColor="@color/error_color"
+        app:ms_floatingLabelColor="@color/black"
+        app:ms_highlightColor="@color/noc_grey"
+        app:ms_hint="Duration"
+        app:ms_multiline="false" />
+
+</LinearLayout>

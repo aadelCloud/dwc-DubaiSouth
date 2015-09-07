@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">cloudconcept.dwc.login</string>
+    <string name="app_name"><b>iDWC</b></string>
+    <string name="app_package">cloudconcept.dwc</string>
+    <string name="welcome">Welcome %s</string>
+    <string name="logout_button">Logout</string>
+    <string name="fetch_contacts_button">Fetch Contacts</string>
+    <string name="fetch_accounts_button">Fetch Accounts</string>
+    <string name="clear_button">Clear</string>
+    <string name="visas_cards">VISAS &amp; CARDS</string>
+    <string name="costomview">im custom view</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+
+    <string-array name="drawer_list">
+        <item>Home</item>
+        <item>Dashboard</item>
+        <item>My Request</item>
+        <item>VISAS &amp; CARDS</item>
+        <item>Company Info</item>
+        <item>Reports</item>
+        <item>Company Documents</item>
+        <item>Need Help</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="title_activity_base_activity2">BaseActivity2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_baseac">Baseac</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_parent">ParentActivity</string>
+
+    <string name="prompt">Choose Filter</string>
+    <string name="title1">Permanent Employee</string>
+    <string name="title2">Access Card</string>
+    <string name="title3">Visit Visa</string>
+    <string name="pull_to_refresh_tap_label">Pull Down To Refresh</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="title_Company_Info">Company Info</string>
+    <string name="title_license_info">License Info</string>
+    <string name="title_leasing_info">Leasing Info</string>
+    <string name="title_shareholders">Shareholders</string>
+    <string name="title_directors">Directors</string>
+    <string name="title_general_managers">General Managers</string>
+    <string name="title_legal_representative">Legal Representative</string>
+    <string name="title_my_requests">My Requests</string>
+
+
+    <string-array name="permanent_employee_filter">
+        <item>All</item>
+        <item>Issued</item>
+        <item>Expired</item>
+        <item>Cancelled</item>
+        <item>Under Process</item>
+        <item>Under Renewal</item>
+    </string-array>
+
+    <string-array name="access_card_filter">
+        <item>All</item>
+        <item>Draft</item>
+        <item>Active</item>
+        <item>Expired</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="RatingThankYouMessage">Thank you for rating our service.</string>
+    <string name="ServiceThankYouMessage">We can confirm that we have received your submission and your Ref No
+    # %s.</string>
+     <string name="ServiceThankYouReservation">We can confirm that we have received your submission for new company and your Ref No
+    # %s.</string>
+    <string name="ServiceThankYouMessagePayment">We can confirm that we have received the payment of AED %s</string>
+    <string name="ServiceThankYouMessageNOCNote">You will receive e-copy of your NOC shortly on %s</string>
+     <string name="ServiceThankYouMessageCards">Your account will be debited AED %s (including AED 10 knowledge
+    fee) and you will be notified when the payment is complete</string>
+
+    <string name="NeedHelpThankYouMessage">Dear Customer\r\n\r\nThank you for providing a valuable feedback.
+    Our team will review your feedback and get back to you as soon as possible. You case number is
+    \"%s\". To track and see the update on your case, please go to My case tab and see the detail
+    \r\n\r\n For any urgent enquiry, Call us at +971 4 816 0000 or use our online chat option</string>
+    <string name="title_activity_main_noc">MainNocActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

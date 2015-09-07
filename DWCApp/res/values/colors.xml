@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pantone">#0080FF</color>
+    <color name="pantone_black">#1B1B17</color>
+    <color name="connecting_color">#0040A6</color>
+    <color name="developing_color">#4D80CC</color>
+    <color name="adding_color">#4DA6A6</color>
+    <color name="engaging_color">#504747</color>
+    <color name="showcasing_color">#0080FF</color>
+    <color name="play_color">#59B34D</color>
+    <color name="live_color">#A69940</color>
+    <color name="improve_color">#505959</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#4C658E</color>
+    <color name="btn_press_color">#185999</color>
+    <color name="btn_unpress_color">#185999</color>
+
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="black">#000000</color>
+    <color name="dwc_blue_color">#196DA9</color>
+    <color name="slide_menu_item_background">#186AA3</color>
+    <color name="header_background">#186AA2</color>
+
+
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="black_night">#0C090A</color>
+    <color name="light_grey">#C7C7CC</color>
+    <color name="grey">#878787</color>
+    <color name="white_green">#F1F4F4</color>
+    <color name="header_background2">#EAECEB</color>
+    <color name="noc_grey">#C5C5C5</color>
+    <color name="noc_blue">#1914B9</color>
+    <color name="noc_top_background">#D6E1E8</color>
+    <color name="noc_below_background">#F1F4F4</color>
+    <color name="cancel_background">#524F4A</color>
+
+    <color name="disabled_color">#44000000</color>
+    <color name="error_color">#E7492E</color>
+
+
+</resources>

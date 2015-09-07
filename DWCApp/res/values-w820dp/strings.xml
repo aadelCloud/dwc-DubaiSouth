@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_Company_Info">Company Info</string>
+    <string name="title_license_info">License Info</string>
+    <string name="title_leasing_info">Leasing Info</string>
+    <string name="title_shareholders">Shareholders</string>
+    <string name="title_directors">Directors</string>
+    <string name="title_general_managers">General Managers</string>
+    <string name="title_legal_representative">Legal Representative</string>
+</resources>

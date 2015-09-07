@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Note:"
+        android:textStyle="bold"
+        android:id="@+id/textView39"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="-This service will be subject to approval"
+        android:textStyle="normal"
+        android:id="@+id/textView40"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:text="-Make sure your new capital should be minimum AED 300,000 and MUST be numeric with no decimal value"
+        android:textStyle="normal"
+        android:id="@+id/textView41"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Share Capital(AED)"
+        android:textStyle="bold"
+        android:id="@+id/textView42"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etShareCapital"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:gravity="center"
+        android:layout_marginRight="21dp"
+        android:inputType="number"
+        android:text="450,000"
+        android:background="@drawable/search_edit_text_background"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="New Share Capital(AED)"
+        android:textStyle="bold"
+        android:id="@+id/textView43"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etNewShareCapital"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginRight="21dp"
+        android:text="450,000"
+        android:inputType="number"
+        android:background="@drawable/search_edit_text_background"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

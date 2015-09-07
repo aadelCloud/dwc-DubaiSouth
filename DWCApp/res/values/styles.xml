@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+    </style>
+
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/dwc_blue_color</item>
+        <item name="colorPrimaryDark">@color/material_blue_grey_950</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+    </style>
+
+    <style name="AppTheme2" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/myAccentColor</item>
+
+        <item name="bottomSheetStyle">@style/BottomSheet.StyleDialog</item>
+
+    </style>
+
+
+    <style name="BottomSheet.StyleDialog" parent="BottomSheet.Dialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowAnimationStyle">@style/BottomSheet.Animation</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/dwc_blue_color</item>
+        <item name="android:textColorHint">#42ffffff</item>
+        <item name="bs_dialogBackground">@color/white</item>
+        <item name="bs_dividerColor">@color/abc_search_url_text_pressed</item>
+        <item name="bs_numColumns">1</item>
+        <item name="bs_listStyle">@style/BottomSheet.List</item>
+    </style>
+
+    <declare-styleable name="HListView">
+        <attr name="android:entries" />
+        <attr name="android:divider" />
+        <attr name="hlv_dividerWidth" format="dimension" />
+        <attr name="hlv_headerDividersEnabled" format="boolean" />
+        <attr name="hlv_footerDividersEnabled" format="boolean" />
+        <attr name="hlv_overScrollHeader" format="reference|color" />
+        <attr name="hlv_overScrollFooter" format="reference|color" />
+
+        <!--
+        When "wrap_content" is used as value of the layout_height property.
+        Pass the position, inside the adapter, of the view being used to measure the view
+        or '-1' to use the default behavior ( default is -1 )
+        -->
+        <attr name="hlv_measureWithChild" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AbsHListView">
+        <attr name="android:listSelector" />
+        <attr name="android:smoothScrollbar" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:choiceMode" />
+
+        <attr name="hlv_stackFromRight" format="boolean" />
+        <attr name="hlv_transcriptMode">
+            <enum name="disabled" value="0"/>
+            <enum name="normal" value="1" />
+            <enum name="alwaysScroll" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

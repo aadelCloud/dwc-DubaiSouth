@@ -1,0 +1,3 @@
+include ':forcedroid:external:cordova:framework', ':nineoldandroids-2.4.0', ':library'
+include ':DWCApp'
+include ':forcedroid:libs:SalesforceSDK'
