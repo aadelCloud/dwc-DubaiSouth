@@ -20,6 +20,7 @@ public interface ListView {
     int[] getPullToRefreshColorResources();
 
     void onRefresh();
+
     void loadMore();
 
     void onItemClick(AdapterView<?> adapterView, View view, int position, long l);

@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import activity.CompanyDocumentsActivity;
 import activity.EmployeeListActivity;
 import activity.ReportsActivity;
+import activity.ViewStatementShowDetails;
 import cloudconcept.dwc.HomepageActivity;
 import fragmentActivity.CardActivity;
 import fragmentActivity.ChangeAndRemovalActivity;
@@ -32,6 +33,7 @@ import model.Card_Management__c;
 import model.Company_Documents__c;
 import model.Contract_DWC__c;
 import model.Directorship;
+import model.FreeZonePayment;
 import model.Visa;
 
 /**
@@ -220,6 +222,16 @@ public class ActivitiesLauncher {
 
     public static void openViewStatementActivity(Context context) {
         intent = new Intent(context, ViewStatementActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
+    }
+
+    public static void openViewStatementShowDetails(Context context,FreeZonePayment freeZonePayment) {
+        Gson gson = new Gson();
+        String str = gson.toJson(freeZonePayment);
+        intent = new Intent(context, ViewStatementShowDetails.class);
+        intent.putExtra("str",str);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);

@@ -302,7 +302,7 @@ public class SoqlStatements {
     }
 
     public static String constructViewStatementQuery(String id, int offset, int limit) {
-        String soql = String.format(soql_get_company_documents, id, limit, offset);
+        String soql = String.format(soql_view_statement, id, limit, offset);
         return soql;
     }
 }

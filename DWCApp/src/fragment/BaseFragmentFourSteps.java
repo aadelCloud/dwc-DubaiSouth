@@ -186,6 +186,7 @@ public abstract class BaseFragmentFourSteps extends Fragment implements View.OnC
                     btnNOC2.setBackgroundResource(R.drawable.bullet_success);
                     btnNOC2.setText("");
                     btnNOC3.setSelected(true);
+                    btnNext.setText("Submit");
                     status = 3;
 
                 } else {

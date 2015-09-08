@@ -662,7 +662,12 @@ public class ChangeAndRemovalServiceFragment extends BaseFragmentFourSteps {
                 public void onSuccess(RestRequest request, RestResponse response) {
                     Case caseDirectorRemoval = SFResponseManager.parseCaseObject(response.toString());
                     activity.setCaseObject(caseDirectorRemoval);
-                    getEServiceAdminInfo(client, activity.getCaseObject().getService_Requested__c());
+                    if (activity.getMethodName().equals("CreateRequestAddressChange")) {
+                        Utilities.dismissLoadingDialog();
+                        PerformParentNext(btnNext);
+                    } else {
+                        getEServiceAdminInfo(client, activity.getCaseObject().getService_Requested__c());
+                    }
                 }
 
                 @Override

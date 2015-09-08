@@ -7,147 +7,24 @@
       </config>
     </shared>
     <layouts>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps.xml">
+      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/address_change_preview_page.xml">
         <config>
           <theme>@style/AppTheme2</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/cancel_card_first_page.xml">
+      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/view_statement.xml">
         <config>
           <theme>@style/AppTheme2</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/company_documents.xml">
-        <config>
-          <theme>@style/AppTheme2</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/fragment_cancel_visa_pay_and_submit.xml">
-        <config>
-          <theme>@style/AppTheme2</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/homepage.xml">
-        <config>
-          <theme>@style/AppTheme2</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/noc_first_page.xml">
-        <config>
-          <theme>@style/AppTheme2</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_listview.xml">
-        <config>
-          <theme>@android:style/Theme.Holo</theme>
         </config>
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ef0801-e9b7-40c4-8928-b03fa0ba1dc4" name="Default" comment="commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/utilities/AutomaticUtilities.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourStepsNew.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/CancelVisaMainFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/InitialCancelVisaFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/InitialPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/InitialPassportPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/JobAdapters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/NOCAttachmentPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/PayAndSubmit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/PayAndSubmit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/PayAndSubmitCancelVisa.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/RenewPassportMainFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/SecondFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/SecondFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisaActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/VisaMainFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_cancel_visa_pay_and_submit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_initial_cancel_visa.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_initial_renew_passport.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_initial_renew_visa.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_second.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DWCApp/res/layout/fragment_second_cancel_visa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/drawable-hdpi/Thumbs.db" afterPath="$PROJECT_DIR$/DWCApp/res/drawable-hdpi/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/drawable-mdpi/Thumbs.db" afterPath="$PROJECT_DIR$/DWCApp/res/drawable-mdpi/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/drawable-xhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/DWCApp/res/drawable-xhdpi/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/drawable-xxhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/DWCApp/res/drawable-xxhdpi/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/AccessCardFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/AccessCardFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/Account.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" afterPath="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/AndroidManifest.xml" afterPath="$PROJECT_DIR$/DWCApp/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/companychangeservices/AttachmentPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/companychangeservices/AttachmentPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFiveSteps.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFiveSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardFormFieldPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardFormFieldPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardInitialPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardInitialPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardMainFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardMainFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CardActivity.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CardActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/Card_Management__c.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/Card_Management__c.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/activity/CompanyDocumentsActivity.java" afterPath="$PROJECT_DIR$/DWCApp/src/activity/CompanyDocumentsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCAttachmentPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCAttachmentPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/CountryofBirth.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/CountryofBirth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/CurrentLicenseNumber.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/CurrentLicenseNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/CurrentNationality.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/CurrentNationality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/CurrentPassport.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/CurrentPassport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/DWCApp.iml" afterPath="$PROJECT_DIR$/DWCApp/DWCApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/DWCExpandableListAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/DWCExpandableListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/activity/EmployeeListActivity.java" afterPath="$PROJECT_DIR$/DWCApp/src/activity/EmployeeListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/FragmentListAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/FragmentListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/HomepageActivity.java" afterPath="$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/HomepageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/JobTitleAtImmigration.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/JobTitleAtImmigration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ListView.java" afterPath="$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ListView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/MyVisitVisaAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/MyVisitVisaAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCAttachmentPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCAttachmentPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/NOCEmployeeListAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/NOCEmployeeListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCFormFieldPage.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCFormFieldPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/Nationality.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/Nationality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/NocMainFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/NocMainFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocPayAndSubmit.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocPayAndSubmit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/PayAndSubmit.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/Cards/PayAndSubmit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java" afterPath="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java" afterPath="$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" afterPath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/ShowDetailsActivity.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragmentActivity/ShowDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" afterPath="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/SponsoringCompany.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/SponsoringCompany.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java" afterPath="$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/Visa.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/Visa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/model/VisaHolder.java" afterPath="$PROJECT_DIR$/DWCApp/src/model/VisaHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/VisasAndCardsFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/VisasAndCardsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/VisitVisaFragment.java" afterPath="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/VisitVisaFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps.xml" afterPath="$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build.gradle" afterPath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/layout/company_documents.xml" afterPath="$PROJECT_DIR$/DWCApp/res/layout/company_documents.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/layout/homepage.xml" afterPath="$PROJECT_DIR$/DWCApp/res/layout/homepage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/library.iml" afterPath="$PROJECT_DIR$/library/library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml" afterPath="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/layout/noc_attachment_page.xml" afterPath="$PROJECT_DIR$/DWCApp/res/layout/noc_attachment_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/values/styles.xml" afterPath="$PROJECT_DIR$/DWCApp/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DWCApp/res/layout/view_content.xml" afterPath="$PROJECT_DIR$/DWCApp/res/layout/view_content.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list id="8938538c-5a0e-43bc-8056-5364d05d6339" name="Failed commit: Default" comment="Dynamic Second NOC page finished with merged data" />
-    <list id="037b5906-d262-4d28-9cd2-cea2685ed0dd" name="Failed commit: Failed commit: Default" comment="Dynamic Second NOC page finished with merged data" />
-    <list id="30bdf1e9-7982-47c7-b0f0-9c308de10a26" name="Failed commit: Default (2)" comment="NOC with thank you page" />
-    <list id="1ef9d019-bc7c-4e16-a402-a7e01410ec97" name="Failed commit: Default (3)" comment="NOC with thank you page" />
-    <list id="a568862a-9d3d-4f4a-8474-1bf1512dff21" name="Failed commit: Default (4)" comment="noc form field validation and review and thank you page" />
-    <list id="d032c93e-4603-479a-9841-280f80efdaad" name="Failed commit: Failed commit: Default (4)" comment="noc form field validation and review and thank you page" />
-    <list id="dff153d5-3fd0-431c-a4d8-a9b7e82b5bf5" name="Failed commit: Default (5)" comment="noc form field validation and review and thank you page" />
-    <ignored path="dwc.iws" />
+    <list default="true" id="e1620cb4-666c-43d4-9d0f-457a68fdb194" name="Default" comment="" />
+    <ignored path="dwc-DubaiSouth.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -161,353 +38,20 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
   <component name="FavoritesManager">
-    <favorites_list name="dwc" />
+    <favorites_list name="dwc-DubaiSouth" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="VisaMainFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/VisaMainFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="508" column="1" selection-start-line="508" selection-start-column="1" selection-end-line="508" selection-end-column="1" />
-              <folding>
-                <element signature="e#2488#2489#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
-                <element signature="e#2600#2601#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
-                <element signature="e#2713#2714#0" expanded="true" />
-                <element signature="e#2774#2775#0" expanded="true" />
-                <element signature="e#2831#2832#0" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#3100#3101#0" expanded="true" />
-                <element signature="e#3127#3128#0" expanded="true" />
-                <element signature="e#4192#8331#0" expanded="true" />
-                <element signature="e#5039#5079#0" expanded="true" />
-                <element signature="e#8330#8331#0" expanded="true" />
-                <element signature="e#9032#9441#0" expanded="true" />
-                <element signature="e#9440#9441#0" expanded="true" />
-                <element signature="e#11893#11894#0" expanded="true" />
-                <element signature="e#11920#11921#0" expanded="true" />
-                <element signature="e#12266#12267#0" expanded="true" />
-                <element signature="e#12304#12305#0" expanded="true" />
-                <element signature="e#12356#13086#0" expanded="true" />
-                <element signature="e#12691#13067#0" expanded="true" />
-                <element signature="e#13066#13067#0" expanded="true" />
-                <element signature="e#13085#13086#0" expanded="true" />
-                <element signature="e#13274#13275#0" expanded="true" />
-                <element signature="e#13318#13319#0" expanded="true" />
-                <element signature="e#13939#13955#0" expanded="true" />
-                <element signature="e#15915#15931#0" expanded="true" />
-                <element signature="e#19117#21730#0" expanded="true" />
-                <element signature="e#19584#19615#0" expanded="true" />
-                <element signature="e#21729#21730#0" expanded="true" />
-                <element signature="e#21994#22039#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RenewPassportMainFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/RenewPassportMainFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="494" column="1" selection-start-line="494" selection-start-column="1" selection-end-line="494" selection-end-column="1" />
-              <folding>
-                <element signature="e#3215#3216#0" expanded="true" />
-                <element signature="e#3281#3282#0" expanded="true" />
-                <element signature="e#3337#3338#0" expanded="true" />
-                <element signature="e#3398#3399#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-                <element signature="e#3507#3508#0" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3749#3750#0" expanded="true" />
-                <element signature="e#4909#9261#0" expanded="true" />
-                <element signature="e#5822#5862#0" expanded="true" />
-                <element signature="e#9260#9261#0" expanded="true" />
-                <element signature="e#12815#12816#0" expanded="true" />
-                <element signature="e#12853#12854#0" expanded="true" />
-                <element signature="e#12905#13635#0" expanded="true" />
-                <element signature="e#13240#13616#0" expanded="true" />
-                <element signature="e#13615#13616#0" expanded="true" />
-                <element signature="e#13634#13635#0" expanded="true" />
-                <element signature="e#13823#13824#0" expanded="true" />
-                <element signature="e#13867#13868#0" expanded="true" />
-                <element signature="e#14539#14555#0" expanded="true" />
-                <element signature="e#15957#15958#0" expanded="true" />
-                <element signature="e#16001#16002#0" expanded="true" />
-                <element signature="e#16464#16480#0" expanded="true" />
-                <element signature="e#18416#21029#0" expanded="true" />
-                <element signature="e#18883#18914#0" expanded="true" />
-                <element signature="e#21028#21029#0" expanded="true" />
-                <element signature="e#21293#21338#0" expanded="true" />
-                <element signature="e#22252#22253#0" expanded="true" />
-                <element signature="e#22290#22291#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visa.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/model/Visa.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="557" column="46" selection-start-line="557" selection-start-column="46" selection-end-line="557" selection-end-column="46" />
-              <folding>
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-                <element signature="e#1859#1860#0" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-                <element signature="e#3341#3342#0" expanded="true" />
-                <element signature="e#3380#3381#0" expanded="true" />
-                <element signature="e#4145#4146#0" expanded="true" />
-                <element signature="e#4187#4188#0" expanded="true" />
-                <element signature="e#4366#4367#0" expanded="true" />
-                <element signature="e#4414#4415#0" expanded="true" />
-                <element signature="e#4713#4714#0" expanded="true" />
-                <element signature="e#4759#4760#0" expanded="true" />
-                <element signature="e#4952#4953#0" expanded="true" />
-                <element signature="e#4992#4993#0" expanded="true" />
-                <element signature="e#5177#5178#0" expanded="true" />
-                <element signature="e#5207#5208#0" expanded="true" />
-                <element signature="e#5253#5254#0" expanded="true" />
-                <element signature="e#5291#5292#0" expanded="true" />
-                <element signature="e#5866#5867#0" expanded="true" />
-                <element signature="e#5901#5902#0" expanded="true" />
-                <element signature="e#5957#5958#0" expanded="true" />
-                <element signature="e#6005#6006#0" expanded="true" />
-                <element signature="e#6046#6047#0" expanded="true" />
-                <element signature="e#6083#6084#0" expanded="true" />
-                <element signature="e#6143#6144#0" expanded="true" />
-                <element signature="e#6190#6191#0" expanded="true" />
-                <element signature="e#6247#6248#0" expanded="true" />
-                <element signature="e#6300#6301#0" expanded="true" />
-                <element signature="e#6531#6532#0" expanded="true" />
-                <element signature="e#6582#6583#0" expanded="true" />
-                <element signature="e#6794#6795#0" expanded="true" />
-                <element signature="e#6834#6835#0" expanded="true" />
-                <element signature="e#7006#7007#0" expanded="true" />
-                <element signature="e#7055#7056#0" expanded="true" />
-                <element signature="e#7253#7254#0" expanded="true" />
-                <element signature="e#7292#7293#0" expanded="true" />
-                <element signature="e#7453#7454#0" expanded="true" />
-                <element signature="e#7495#7496#0" expanded="true" />
-                <element signature="e#7778#7779#0" expanded="true" />
-                <element signature="e#7826#7827#0" expanded="true" />
-                <element signature="e#8035#8036#0" expanded="true" />
-                <element signature="e#8077#8078#0" expanded="true" />
-                <element signature="e#8336#8337#0" expanded="true" />
-                <element signature="e#8383#8384#0" expanded="true" />
-                <element signature="e#8772#8773#0" expanded="true" />
-                <element signature="e#8818#8819#0" expanded="true" />
-                <element signature="e#9524#9525#0" expanded="true" />
-                <element signature="e#9558#9559#0" expanded="true" />
-                <element signature="e#9621#9622#0" expanded="true" />
-                <element signature="e#9662#9663#0" expanded="true" />
-                <element signature="e#9691#9692#0" expanded="true" />
-                <element signature="e#9716#9717#0" expanded="true" />
-                <element signature="e#9752#9753#0" expanded="true" />
-                <element signature="e#9780#9781#0" expanded="true" />
-                <element signature="e#9836#9837#0" expanded="true" />
-                <element signature="e#9888#9889#0" expanded="true" />
-                <element signature="e#10096#10097#0" expanded="true" />
-                <element signature="e#10133#10134#0" expanded="true" />
-                <element signature="e#10193#10194#0" expanded="true" />
-                <element signature="e#10240#10241#0" expanded="true" />
-                <element signature="e#10284#10285#0" expanded="true" />
-                <element signature="e#10324#10325#0" expanded="true" />
-                <element signature="e#10490#10491#0" expanded="true" />
-                <element signature="e#10533#10534#0" expanded="true" />
-                <element signature="e#10720#10721#0" expanded="true" />
-                <element signature="e#10772#10773#0" expanded="true" />
-                <element signature="e#10997#10998#0" expanded="true" />
-                <element signature="e#11051#11052#0" expanded="true" />
-                <element signature="e#11283#11284#0" expanded="true" />
-                <element signature="e#11336#11337#0" expanded="true" />
-                <element signature="e#11538#11539#0" expanded="true" />
-                <element signature="e#11565#11566#0" expanded="true" />
-                <element signature="e#11605#11606#0" expanded="true" />
-                <element signature="e#11632#11633#0" expanded="true" />
-                <element signature="e#11670#11671#0" expanded="true" />
-                <element signature="e#11704#11705#0" expanded="true" />
-                <element signature="e#11758#11759#0" expanded="true" />
-                <element signature="e#11799#11800#0" expanded="true" />
-                <element signature="e#11844#11845#0" expanded="true" />
-                <element signature="e#11885#11886#0" expanded="true" />
-                <element signature="e#12061#12062#0" expanded="true" />
-                <element signature="e#12110#12111#0" expanded="true" />
-                <element signature="e#12311#12312#0" expanded="true" />
-                <element signature="e#12353#12354#0" expanded="true" />
-                <element signature="e#12526#12527#0" expanded="true" />
-                <element signature="e#12568#12569#0" expanded="true" />
-                <element signature="e#12740#12741#0" expanded="true" />
-                <element signature="e#12781#12782#0" expanded="true" />
-                <element signature="e#12949#12950#0" expanded="true" />
-                <element signature="e#12990#12991#0" expanded="true" />
-                <element signature="e#13156#13157#0" expanded="true" />
-                <element signature="e#13195#13196#0" expanded="true" />
-                <element signature="e#13350#13351#0" expanded="true" />
-                <element signature="e#13386#13387#0" expanded="true" />
-                <element signature="e#13444#13445#0" expanded="true" />
-                <element signature="e#13489#13490#0" expanded="true" />
-                <element signature="e#13528#13529#0" expanded="true" />
-                <element signature="e#13563#13564#0" expanded="true" />
-                <element signature="e#13619#13620#0" expanded="true" />
-                <element signature="e#13662#13663#0" expanded="true" />
-                <element signature="e#13708#13709#0" expanded="true" />
-                <element signature="e#13750#13751#0" expanded="true" />
-                <element signature="e#13926#13927#0" expanded="true" />
-                <element signature="e#13971#13972#0" expanded="true" />
-                <element signature="e#14160#14161#0" expanded="true" />
-                <element signature="e#14206#14207#0" expanded="true" />
-                <element signature="e#14393#14394#0" expanded="true" />
-                <element signature="e#14433#14434#0" expanded="true" />
-                <element signature="e#14601#14602#0" expanded="true" />
-                <element signature="e#14646#14647#0" expanded="true" />
-                <element signature="e#14833#14834#0" expanded="true" />
-                <element signature="e#14877#14878#0" expanded="true" />
-                <element signature="e#15053#15054#0" expanded="true" />
-                <element signature="e#15090#15091#0" expanded="true" />
-                <element signature="e#15150#15151#0" expanded="true" />
-                <element signature="e#15197#15198#0" expanded="true" />
-                <element signature="e#15251#15252#0" expanded="true" />
-                <element signature="e#15293#15294#0" expanded="true" />
-                <element signature="e#15489#15490#0" expanded="true" />
-                <element signature="e#15534#15535#0" expanded="true" />
-                <element signature="e#16037#16038#0" expanded="true" />
-                <element signature="e#16081#16082#0" expanded="true" />
-                <element signature="e#16272#16273#0" expanded="true" />
-                <element signature="e#16309#16310#0" expanded="true" />
-                <element signature="e#16373#16374#0" expanded="true" />
-                <element signature="e#16420#16421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_cancel_visa_pay_and_submit.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/fragment_cancel_visa_pay_and_submit.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.933333">
-              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisaActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisaActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisasAndCardsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisasAndCardsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CancelVisaMainFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/CancelVisaMainFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-              <folding>
-                <element signature="e#2120#2121#0" expanded="true" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2617#2618#0" expanded="true" />
-                <element signature="e#2674#2675#0" expanded="true" />
-                <element signature="e#2731#2732#0" expanded="true" />
-                <element signature="e#2792#2793#0" expanded="true" />
-                <element signature="e#2849#2850#0" expanded="true" />
-                <element signature="e#2911#2912#0" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
-                <element signature="e#3155#3156#0" expanded="true" />
-                <element signature="e#3835#4376#0" expanded="true" />
-                <element signature="e#4375#4376#0" expanded="true" />
-                <element signature="e#6826#6827#0" expanded="true" />
-                <element signature="e#6853#6854#0" expanded="true" />
-                <element signature="e#6930#6931#0" expanded="true" />
-                <element signature="e#6968#6969#0" expanded="true" />
-                <element signature="e#7020#7744#0" expanded="true" />
-                <element signature="e#7355#7725#0" expanded="true" />
-                <element signature="e#7724#7725#0" expanded="true" />
-                <element signature="e#7743#7744#0" expanded="true" />
-                <element signature="e#8650#8666#0" expanded="true" />
-                <element signature="e#10498#13370#0" expanded="true" />
-                <element signature="e#10997#11028#0" expanded="true" />
-                <element signature="e#13369#13370#0" expanded="true" />
-                <element signature="e#14424#14469#0" expanded="true" />
-                <element signature="e#15382#15383#0" expanded="true" />
-                <element signature="e#15420#15421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseFragmentFourStepsNew.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourStepsNew.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="55" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_service_four_steps.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.6">
-              <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseFragmentFourSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31592688">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -515,19 +59,19 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="DWC" />
+              <option name="name" value="dwc-DubaiSouth" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value=":forcedroid" />
-                <option name="path" value="$PROJECT_DIR$/forcedroid" />
+                <option name="name" value="dwc-DubaiSouth" />
+                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="DWC" />
-                <option name="path" value="$PROJECT_DIR$" />
+                <option name="name" value=":forcedroid" />
+                <option name="path" value="$PROJECT_DIR$/forcedroid" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":forcedroid:external:cordova" />
@@ -950,9 +494,14 @@
                 <option name="name" value="prepareComAndroidSupportMultidex100Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:22.2.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72221Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.astuetz:pagerslidingtabstrip:1.0.1" />
@@ -990,19 +539,9 @@
                 <option name="name" value="prepareComJoooonhoSelectableroundedimageview101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.external.cordova:framework:unspecified" />
+                <option name="description" value="Prepare com.malinskiy:superrecyclerview:1.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDWCForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.libs:SalesforceSDK:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDWCForcedroidLibsSalesforceSDKUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC:library:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareDWCLibraryUnspecifiedLibrary" />
+                <option name="name" value="prepareComMalinskiySuperrecyclerview111Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare de.hdodenhof:circleimageview:1.2.1" />
@@ -1018,14 +557,24 @@
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.external.cordova:framework:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.libs:SalesforceSDK:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidLibsSalesforceSDKUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth:library:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDwcDubaiSouthLibraryUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare fr.baloomba:viewpagerindicator:2.4.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareFrBaloombaViewpagerindicator242Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare org.lucasr.twowayview:twowayview:0.1.4" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareOrgLucasrTwowayviewTwowayview014Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1207,6 +756,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1593,9 +1147,14 @@
                 <option name="name" value="prepareComAndroidSupportMultidex100Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:22.2.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
-                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72221Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
+                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.astuetz:pagerslidingtabstrip:1.0.1" />
@@ -1633,19 +1192,9 @@
                 <option name="name" value="prepareComJoooonhoSelectableroundedimageview101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.external.cordova:framework:unspecified" />
+                <option name="description" value="Prepare com.malinskiy:superrecyclerview:1.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
-                <option name="name" value="prepareDWCForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.libs:SalesforceSDK:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
-                <option name="name" value="prepareDWCForcedroidLibsSalesforceSDKUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC:library:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
-                <option name="name" value="prepareDWCLibraryUnspecifiedLibrary" />
+                <option name="name" value="prepareComMalinskiySuperrecyclerview111Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare de.hdodenhof:circleimageview:1.2.1" />
@@ -1661,14 +1210,24 @@
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.external.cordova:framework:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.libs:SalesforceSDK:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidLibsSalesforceSDKUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth:library:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
+                <option name="name" value="prepareDwcDubaiSouthLibraryUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare fr.baloomba:viewpagerindicator:2.4.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
                 <option name="name" value="prepareFrBaloombaViewpagerindicator242Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare org.lucasr.twowayview:twowayview:0.1.4" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
-                <option name="name" value="prepareOrgLucasrTwowayviewTwowayview014Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/DWCApp" />
@@ -2181,9 +1740,14 @@
                 <option name="name" value="prepareComAndroidSupportCardviewV72103Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:22.2.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
-                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72221Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
+                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.astuetz:pagerslidingtabstrip:1.0.1" />
@@ -2211,14 +1775,9 @@
                 <option name="name" value="prepareComJoooonhoSelectableroundedimageview101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.external.cordova:framework:unspecified" />
+                <option name="description" value="Prepare com.malinskiy:superrecyclerview:1.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
-                <option name="name" value="prepareDWCForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC:library:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
-                <option name="name" value="prepareDWCLibraryUnspecifiedLibrary" />
+                <option name="name" value="prepareComMalinskiySuperrecyclerview111Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare de.hdodenhof:circleimageview:1.2.1" />
@@ -2234,14 +1793,19 @@
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.external.cordova:framework:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth:library:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
+                <option name="name" value="prepareDwcDubaiSouthLibraryUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare fr.baloomba:viewpagerindicator:2.4.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
                 <option name="name" value="prepareFrBaloombaViewpagerindicator242Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare org.lucasr.twowayview:twowayview:0.1.4" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
-                <option name="name" value="prepareOrgLucasrTwowayviewTwowayview014Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid" />
@@ -4121,9 +3685,14 @@
                 <option name="name" value="prepareComAndroidSupportCardviewV72103Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:22.2.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
-                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72221Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
+                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.astuetz:pagerslidingtabstrip:1.0.1" />
@@ -4151,14 +3720,9 @@
                 <option name="name" value="prepareComJoooonhoSelectableroundedimageview101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.external.cordova:framework:unspecified" />
+                <option name="description" value="Prepare com.malinskiy:superrecyclerview:1.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
-                <option name="name" value="prepareDWCForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC:library:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
-                <option name="name" value="prepareDWCLibraryUnspecifiedLibrary" />
+                <option name="name" value="prepareComMalinskiySuperrecyclerview111Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare de.hdodenhof:circleimageview:1.2.1" />
@@ -4174,14 +3738,19 @@
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.external.cordova:framework:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth:library:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
+                <option name="name" value="prepareDwcDubaiSouthLibraryUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare fr.baloomba:viewpagerindicator:2.4.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
                 <option name="name" value="prepareFrBaloombaViewpagerindicator242Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare org.lucasr.twowayview:twowayview:0.1.4" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
-                <option name="name" value="prepareOrgLucasrTwowayviewTwowayview014Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs" />
@@ -4672,9 +4241,14 @@
                 <option name="name" value="prepareComAndroidSupportCardviewV72103Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:22.2.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:22.2.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
-                <option name="name" value="prepareComAndroidSupportSupportV42220Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72221Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.2.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
+                <option name="name" value="prepareComAndroidSupportSupportV42221Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.astuetz:pagerslidingtabstrip:1.0.1" />
@@ -4702,14 +4276,9 @@
                 <option name="name" value="prepareComJoooonhoSelectableroundedimageview101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC.forcedroid.external.cordova:framework:unspecified" />
+                <option name="description" value="Prepare com.malinskiy:superrecyclerview:1.1.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
-                <option name="name" value="prepareDWCForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare DWC:library:unspecified" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
-                <option name="name" value="prepareDWCLibraryUnspecifiedLibrary" />
+                <option name="name" value="prepareComMalinskiySuperrecyclerview111Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare de.hdodenhof:circleimageview:1.2.1" />
@@ -4725,14 +4294,19 @@
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth.forcedroid.external.cordova:framework:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
+                <option name="name" value="prepareDwcDubaiSouthForcedroidExternalCordovaFrameworkUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare dwc-DubaiSouth:library:unspecified" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
+                <option name="name" value="prepareDwcDubaiSouthLibraryUnspecifiedLibrary" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare fr.baloomba:viewpagerindicator:2.4.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
                 <option name="name" value="prepareFrBaloombaViewpagerindicator242Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare org.lucasr.twowayview:twowayview:0.1.4" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
-                <option name="name" value="prepareOrgLucasrTwowayviewTwowayview014Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK" />
@@ -5336,8 +4910,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10085319943584" />
-        <entry key="E:\Ghareeb DWC\dwc" value="10076622396453" />
+        <entry key="$PROJECT_DIR$" value="10085390018916" />
+        <entry key="$USER_HOME$/Final DWC Phase 1/DWC" value="10084275000803" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -5992,16 +5566,17 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
-                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.hdodenhof/circleimageview/1.2.1/4060affb26fb33a7e8ee8450be4eee551c9987d8/circleimageview-1.2.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.traex.rippleeffect/library/1.3/9db642e7f6331b2de23c40b95f9dd83e5f70c0ed/library-1.3.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ganfra/material-spinner/1.1.0/5454320bce0cefac1fbb03220dcb060d545cb113/material-spinner-1.1.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.orangegangsters/swipy/1.2.0/c5dc38e5e74ba4906bc2bd2de6c59ef49f5f371c/swipy-1.2.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lucasr.twowayview/twowayview/0.1.4/2dd63a6b0183edb9ef24e5ecdbdd6ddf2fbdb436/twowayview-0.1.4.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.malinskiy/superrecyclerview/1.1.1/75dbd415c7fdaa7006d0bfbf96ba2c510a72adaa/superrecyclerview-1.1.1.aar" />
                             <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.2.0/appcompat-v7-22.2.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar" />
-                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.0/support-v4-22.2.0.aar" />
+                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/22.2.1/recyclerview-v7-22.2.1.aar" />
+                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar" />
+                            <option value="D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1.aar" />
                             <option value="$MODULE_DIR$/libs/android-junit-report-1.5.8.jar" />
                             <option value="$MODULE_DIR$/libs/apache-mime4j-0.7.2.jar" />
                             <option value="$MODULE_DIR$/libs/guava-18.0.jar" />
@@ -6188,7 +5763,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="forcedroid" />
+              <option name="name" value="dwc-DubaiSouth" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.2.1-all/c64ydeuardnfqctvr1gm30w53/gradle-2.2.1/src/announce" />
@@ -6309,65 +5884,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java" />
-        <option value="$PROJECT_DIR$/DWCApp/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/views/PullAndLoadListView.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/homepage.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/HomepageActivity.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" />
-        <option value="$PROJECT_DIR$/library/src/main/res/layout/mdl_listview.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/DWCListViewFragment.java" />
-        <option value="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_listview.xml" />
-        <option value="$PROJECT_DIR$/library/build.gradle" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/fragments/ListViewFragment.java" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ListView.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCAttachmentPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCAttachmentPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companychangeservices/AttachmentPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/NOCAttachmentPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/company_documents.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/drawable/list_selector.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/noc_attachment_page.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_content.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/VisasAndCardsFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java" />
-        <option value="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build.gradle" />
-        <option value="$PROJECT_DIR$/DWCApp/src/activity/CompanyDocumentsActivity.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/custom/HorizontalListView.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/custom/CustomViewPager.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/generic_view_horizontal_list_view_item.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/PayAndSubmit.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/SecondFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/PayAndSubmit.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/NOCEmployeeListAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/fragment_second_cancel_visa.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/InitialCancelVisaFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/PayAndSubmitCancelVisa.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/SecondFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/InitialPage.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/VisaMainFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/RenewPassportMainFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/model/Visa.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/fragment_cancel_visa_pay_and_submit.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/CancelVisaMainFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_statement.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/emptyview.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_more_progress.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/res/drawable/item_selector.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/ViewStatementActivity.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_statement_item_row.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/ViewStatementAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/model/FreeZonePayment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/activity/ViewStatementShowDetails.java" />
+        <option value="$PROJECT_DIR$/DWCApp/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/show_details_view_statement.xml" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -6379,14 +5918,14 @@
     <option name="width" value="3226" />
     <option name="height" value="1754" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -6402,53 +5941,31 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWCApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
+              <option name="myItemId" value="dwc-DubaiSouth" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dwc-DubaiSouth" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
+              <option name="myItemId" value="dwc-DubaiSouth" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -6458,7 +5975,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
+              <option name="myItemId" value="dwc-DubaiSouth" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DWCApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dwc-DubaiSouth" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -6472,7 +6007,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
+              <option name="myItemId" value="dwc-DubaiSouth" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -6482,59 +6017,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWC" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWCApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="3404c8a52ffdc045" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DWCApp/libs/jackson-all-1.9.0.jar" />
-    <property name="android.project.structure.last.selected" value="libs" />
-    <property name="android.project.structure.proportion" value="0.15" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="329" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="354" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="fragment.Cards" />
-      <recent name="fragmentActivity.CompanyNOC" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Abanoub Wagdy\Final DWC Phase 1\DWC\DWCApp\res\layout" />
-      <recent name="C:\Users\Abanoub Wagdy\Final DWC Phase 1\DWC\library\src\main\res\layout" />
-      <recent name="C:\Users\Abanoub Wagdy\Final DWC Phase 1\DWC\library\src\main\java\com\blunderer\materialdesignlibrary\views" />
-      <recent name="C:\Users\Abanoub Wagdy\Final DWC Phase 1\DWC\DWCApp\src\fragment" />
-      <recent name="C:\Users\Abanoub Wagdy\Final DWC Phase 1\DWC\DWCApp\src\adapter" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="fragmentActivity.NOCScreen" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="activity" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.DWCApp">
@@ -6618,15 +6118,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -6650,7 +6141,6 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/DWCApp/libs/cloudconcept.jar" />
       <envs />
       <method />
     </configuration>
@@ -6736,224 +6226,44 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59ef0801-e9b7-40c4-8928-b03fa0ba1dc4" name="Default" comment="" />
-      <created>1439225345248</created>
+      <changelist id="e1620cb4-666c-43d4-9d0f-457a68fdb194" name="Default" comment="" />
+      <created>1441666866205</created>
       <option name="number" value="Default" />
-      <updated>1439225345248</updated>
+      <updated>1441666866205</updated>
     </task>
-    <task id="LOCAL-00001" summary="4 files in Model">
-      <created>1439452078487</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1439452078487</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Ignore build">
-      <created>1439452257615</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1439452257615</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Dynamic Second NOC page">
-      <created>1439711751999</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1439711751999</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Dynamic Second NOC page">
-      <created>1439711904087</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1439711904087</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Dynamic Second NOC page">
-      <created>1439715651447</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1439715651447</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Dynamic Second NOC page">
-      <created>1439967626846</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1439967626846</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Dynamic Second NOC page">
-      <created>1439967654588</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1439967654588</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Dynamic Second NOC page">
-      <created>1439967684511</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1439967684511</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Dynamic Fourth NOC page">
-      <created>1439968249811</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968249811</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Dynamic Second NOC page finished with merged data">
-      <created>1439968351012</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968351012</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Dynamic Second NOC page">
-      <created>1439968375882</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968375882</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Dynamic Second NOC page finished with merged data">
-      <created>1439968419304</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968419304</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Dynamic Second NOC page">
-      <created>1439968446937</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968446937</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Dynamic Second NOC page">
-      <created>1439968556504</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1439968556504</updated>
-    </task>
-    <task id="LOCAL-00015" summary="noc form field validation and review and thank you page">
-      <created>1440061551613</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1440061551613</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Merge branch 'master' of https://bitbucket.org/AbanoubWagdy/dwc&#10;&#10;Conflicts:&#10;&#9;DWCApp/src/activity/CompanyDocumentsActivity.java&#10;&#9;DWCApp/src/fragment/BaseServiceFragment.java&#10;&#9;DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java&#10;">
-      <created>1440395368642</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1440395368642</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Merge branch 'master' of https://bitbucket.org/AbanoubWagdy/dwc&#10;&#10;Conflicts:&#10;&#9;DWCApp/src/activity/CompanyDocumentsActivity.java&#10;&#9;DWCApp/src/fragment/BaseServiceFragment.java&#10;&#9;DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java&#10;">
-      <created>1440395466084</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1440395466084</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Merge branch 'master' of https://bitbucket.org/AbanoubWagdy/dwc&#10;&#10;Conflicts:&#10;&#9;DWCApp/src/activity/CompanyDocumentsActivity.java&#10;&#9;DWCApp/src/fragment/BaseServiceFragment.java&#10;&#9;DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java&#10;">
-      <created>1440395495501</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1440395495501</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Final Employee Noc and Company Noc">
-      <created>1440411730249</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1440411730249</updated>
-    </task>
-    <task id="LOCAL-00020" summary="aaaaaa">
-      <created>1440487051540</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1440487051540</updated>
-    </task>
-    <task id="LOCAL-00021" summary="aaaaaaaaaa">
-      <created>1440492116837</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1440492116837</updated>
-    </task>
-    <task id="LOCAL-00022" summary="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-      <created>1440503465153</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1440503465153</updated>
-    </task>
-    <task id="LOCAL-00023" summary="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-      <created>1440506513528</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1440506513528</updated>
-    </task>
-    <task id="LOCAL-00024" summary="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-      <created>1440506781437</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1440506781437</updated>
-    </task>
-    <task id="LOCAL-00025" summary="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-      <created>1440506896568</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1440506896568</updated>
-    </task>
-    <task id="LOCAL-00026" summary="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
-      <created>1440506992781</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1440506992781</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Final Phase 1">
-      <created>1440576346894</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1440576346894</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Final Phase 1">
-      <created>1440621016904</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1440621016904</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
     <servers />
-  </component>
-  <component name="TodoView" selected-index="4">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3226" height="1754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28791773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945207" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35342467" sideWeight="0.46159527" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15479451" sideWeight="0.83382136" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17565486" sideWeight="0.3477306" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44726026" sideWeight="0.48535872" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16232876" sideWeight="0.43557832" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1828767" sideWeight="0.6522694" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.076712325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2638175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20068493" sideWeight="0.39458272" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1178" height="580" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1349315" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22739726" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17945206" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -6967,1063 +6277,291 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="4 files in Model" />
-    <MESSAGE value="Ignore build" />
-    <MESSAGE value="Dynamic Fourth NOC page" />
-    <MESSAGE value="Dynamic Second NOC page" />
-    <MESSAGE value="Dynamic Second NOC page finished with merged data" />
-    <MESSAGE value="NOC with thank you page" />
-    <MESSAGE value="noc form field validation and review and thank you page" />
-    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/AbanoubWagdy/dwc&#10;&#10;Conflicts:&#10;&#9;DWCApp/src/activity/CompanyDocumentsActivity.java&#10;&#9;DWCApp/src/fragment/BaseServiceFragment.java&#10;&#9;DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java&#10;" />
-    <MESSAGE value="Final Employee Noc and Company Noc" />
-    <MESSAGE value="aaaaaa" />
-    <MESSAGE value="aaaaaaaaaa" />
-    <MESSAGE value="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
-    <MESSAGE value="Final Phase 1" />
-    <MESSAGE value="f prfmpoemfop3mfop3o4fm3gm3" />
-    <MESSAGE value="Fix some issues" />
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/activity/EmployeeListActivity.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>590</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>422</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>481</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>656</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java</url>
+          <line>662</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/activity/EmployeeListActivity.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java</url>
-          <line>763</line>
+          <line>1105</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java</url>
-          <line>602</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java</url>
+          <line>144</line>
           <properties />
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>294</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java</url>
+          <line>179</line>
           <properties />
-          <option name="timeStamp" value="70" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>308</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java</url>
+          <line>197</line>
           <properties />
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>364</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>170</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>120</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>128</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>127</line>
-          <properties />
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCInitialPage.java</url>
-          <line>222</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCFormFieldPage.java</url>
-          <line>216</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCFormFieldPage.java</url>
-          <line>275</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>416</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>212</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>226</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>243</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>172</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>186</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>231</line>
-          <properties />
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCAttachmentPage.java</url>
-          <line>290</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCAttachmentPage.java</url>
-          <line>298</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>205</line>
-          <properties />
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java</url>
-          <line>104</line>
-          <properties />
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>284</line>
-          <properties />
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNOCFormFieldPage.java</url>
-          <line>242</line>
-          <properties />
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocMainFragment.java</url>
-          <line>208</line>
-          <properties />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocMainFragment.java</url>
-          <line>383</line>
-          <properties />
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java</url>
-          <line>239</line>
-          <properties />
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java</url>
-          <line>323</line>
-          <properties />
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NewCard/MainNewCardFragment.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NewCard/NewCardFormFieldPage.java</url>
-          <line>246</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java</url>
-          <line>174</line>
-          <properties />
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NewCard/MainNewCardFragment.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="147" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/PayAndSubmit.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NewCard/MainNewCardFragment.java</url>
-          <line>2</line>
-          <properties />
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardInitialPage.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CardActivity.java</url>
-          <line>217</line>
-          <properties />
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/exceptionHandling/ExceptionHandler.java</url>
+          <url>file://$PROJECT_DIR$/DWCApp/src/activity/ViewStatementShowDetails.java</url>
           <line>26</line>
           <properties />
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardInitialPage.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/CancelCard/CancelCardFormFieldPage.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java</url>
-          <line>321</line>
-          <properties class="RestAPI.SFResponseManager" />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="160" />
+      <option name="time" value="16" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="DWCApp">
-        <watch expression="NOC__c.class.getFields();" />
-        <watch expression="fields" />
-        <watch expression="picklist" />
-        <watch expression="convertJsonStringToString(ja)" />
-        <watch expression="noc" />
-        <watch expression="get_formFields" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/NOCAttachmentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/noc_attachment_page.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36789298">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/drawable/list_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21019109">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/JobAdapters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24522293">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_content.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29431438">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/item_row_permanent_employee.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44147158">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/horizontal_item_row.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77257526">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6836518">
-          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/LeasingInfoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8046709">
-          <caret line="129" column="11" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.0/support-v4-22.2.0-sources.jar!/android/support/v4/view/ViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2611465">
-          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7480916">
-          <caret line="115" column="95" selection-start-line="115" selection-start-column="95" selection-end-line="115" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48494983">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8726115">
-          <caret line="131" column="24" selection-start-line="131" selection-start-column="24" selection-end-line="131" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56050956">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/activity/CompanyDocumentsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3821656">
-          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66560507">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/company_info_inner_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18394649">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/HorizontalListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24522293">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/CustomViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62039876">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <caret line="159" column="19" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5311#8440#0" expanded="true" />
+            <element signature="e#5766#5797#0" expanded="true" />
+            <element signature="e#6062#8296#0" expanded="true" />
+            <element signature="e#6755#7898#0" expanded="true" />
+            <element signature="e#7897#7898#0" expanded="true" />
+            <element signature="e#8295#8296#0" expanded="true" />
+            <element signature="e#8439#8440#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/generic_view_horizontal_list_view_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ListView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29431438">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/CompanyInfoInnerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72162575">
-          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/gitignore_global.txt">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1105" column="0" selection-start-line="1105" selection-start-column="0" selection-end-line="1105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="304" column="55" selection-start-line="304" selection-start-column="55" selection-end-line="304" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/fragments/ListViewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companychangeservices/InitialPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/ChangeAndRemovalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8096257">
+          <caret line="173" column="65" selection-start-line="173" selection-start-column="65" selection-end-line="173" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companychangeservices/PreviewPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1294118">
+          <caret line="44" column="56" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/address_change_preview_page.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40490797">
-          <caret line="1178" column="57" selection-start-line="1178" selection-start-column="57" selection-end-line="1178" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17128028">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/PayAndSubmit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21319018">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/SecondFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3397239">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/PayAndSubmit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23849693">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ViewPager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10122699">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/NOCEmployeeListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9240798">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/handlers/ViewPagerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22776073">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/VisasAndCardsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/fragment_second_cancel_visa.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.911111">
-          <caret line="168" column="56" selection-start-line="168" selection-start-column="56" selection-end-line="168" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.47058824">
+          <caret line="706" column="18" selection-start-line="706" selection-start-column="18" selection-end-line="706" selection-end-column="18" />
           <folding>
-            <element signature="e#6674#6709#0" expanded="false" />
+            <element signature="e#18307#18308#0" expanded="false" />
+            <element signature="e#18351#18352#0" expanded="false" />
+            <element signature="e#28914#28954#0" expanded="false" />
+            <element signature="e#29781#29782#0" expanded="false" />
+            <element signature="e#29853#29854#0" expanded="false" />
+            <element signature="e#31459#31460#0" expanded="false" />
+            <element signature="e#31497#31498#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0705884">
+          <caret line="124" column="103" selection-start-line="124" selection-start-column="103" selection-end-line="124" selection-end-column="103" />
+          <folding>
+            <element signature="e#10245#10441#0" expanded="false" />
+            <element signature="e#10440#10441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.0/support-v4-22.2.0-sources.jar!/android/support/v4/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33305988">
+          <caret line="610" column="34" selection-start-line="610" selection-start-column="34" selection-end-line="610" selection-end-column="34" />
+          <folding>
+            <element signature="e#21525#21526#0" expanded="false" />
+            <element signature="e#21557#21558#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-22/android/view/ViewStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.759639">
+          <caret line="251" column="16" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_listview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2810903">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/interfaces/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9512196">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/InitialCancelVisaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/PayAndSubmitCancelVisa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8473927">
-          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+        <state vertical-scroll-proportion="2.4570348">
+          <caret line="304" column="55" selection-start-line="304" selection-start-column="55" selection-end-line="304" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/InitialPage.java">
+    <entry file="file://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3167178">
-          <caret line="402" column="65" selection-start-line="402" selection-start-column="65" selection-end-line="402" selection-end-column="65" />
-          <folding>
-            <element signature="e#14756#15660#0" expanded="false" />
-            <element signature="e#14970#15510#0" expanded="false" />
-            <element signature="e#15509#15510#0" expanded="false" />
-            <element signature="e#15659#15660#0" expanded="false" />
-            <element signature="e#15725#16777#0" expanded="false" />
-            <element signature="e#16021#16590#0" expanded="false" />
-            <element signature="e#16589#16590#0" expanded="false" />
-            <element signature="e#16776#16777#0" expanded="false" />
-            <element signature="e#16981#17012#0" expanded="false" />
-            <element signature="e#17294#22224#0" expanded="false" />
-            <element signature="e#22223#22224#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/SecondFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9493865">
-          <caret line="165" column="1" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
-          <folding>
-            <element signature="e#3921#4356#0" expanded="false" />
-            <element signature="e#4355#4356#0" expanded="false" />
-            <element signature="e#4615#4660#0" expanded="false" />
-            <element signature="e#5470#5711#0" expanded="false" />
-            <element signature="e#5710#5711#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="200" column="52" selection-start-line="200" selection-start-column="52" selection-end-line="200" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.5784133">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Renew/VisaMainFragment.java">
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/blunderer/materialdesignlibrary/fragments/ListViewFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="508" column="1" selection-start-line="508" selection-start-column="1" selection-end-line="508" selection-end-column="1" />
-          <folding>
-            <element signature="e#2488#2489#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
-            <element signature="e#2600#2601#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2713#2714#0" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
-            <element signature="e#2831#2832#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#4192#8331#0" expanded="true" />
-            <element signature="e#5039#5079#0" expanded="true" />
-            <element signature="e#8330#8331#0" expanded="true" />
-            <element signature="e#9032#9441#0" expanded="true" />
-            <element signature="e#9440#9441#0" expanded="true" />
-            <element signature="e#11893#11894#0" expanded="true" />
-            <element signature="e#11920#11921#0" expanded="true" />
-            <element signature="e#12266#12267#0" expanded="true" />
-            <element signature="e#12304#12305#0" expanded="true" />
-            <element signature="e#12356#13086#0" expanded="true" />
-            <element signature="e#12691#13067#0" expanded="true" />
-            <element signature="e#13066#13067#0" expanded="true" />
-            <element signature="e#13085#13086#0" expanded="true" />
-            <element signature="e#13274#13275#0" expanded="true" />
-            <element signature="e#13318#13319#0" expanded="true" />
-            <element signature="e#13939#13955#0" expanded="true" />
-            <element signature="e#15915#15931#0" expanded="true" />
-            <element signature="e#19117#21730#0" expanded="true" />
-            <element signature="e#19584#19615#0" expanded="true" />
-            <element signature="e#21729#21730#0" expanded="true" />
-            <element signature="e#21994#22039#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.21309963">
+          <caret line="35" column="87" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/RenewPassport/RenewPassportMainFragment.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/emptyview.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="494" column="1" selection-start-line="494" selection-start-column="1" selection-end-line="494" selection-end-column="1" />
-          <folding>
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3281#3282#0" expanded="true" />
-            <element signature="e#3337#3338#0" expanded="true" />
-            <element signature="e#3398#3399#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3507#3508#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3749#3750#0" expanded="true" />
-            <element signature="e#4909#9261#0" expanded="true" />
-            <element signature="e#5822#5862#0" expanded="true" />
-            <element signature="e#9260#9261#0" expanded="true" />
-            <element signature="e#12815#12816#0" expanded="true" />
-            <element signature="e#12853#12854#0" expanded="true" />
-            <element signature="e#12905#13635#0" expanded="true" />
-            <element signature="e#13240#13616#0" expanded="true" />
-            <element signature="e#13615#13616#0" expanded="true" />
-            <element signature="e#13634#13635#0" expanded="true" />
-            <element signature="e#13823#13824#0" expanded="true" />
-            <element signature="e#13867#13868#0" expanded="true" />
-            <element signature="e#14539#14555#0" expanded="true" />
-            <element signature="e#15957#15958#0" expanded="true" />
-            <element signature="e#16001#16002#0" expanded="true" />
-            <element signature="e#16464#16480#0" expanded="true" />
-            <element signature="e#18416#21029#0" expanded="true" />
-            <element signature="e#18883#18914#0" expanded="true" />
-            <element signature="e#21028#21029#0" expanded="true" />
-            <element signature="e#21293#21338#0" expanded="true" />
-            <element signature="e#22252#22253#0" expanded="true" />
-            <element signature="e#22290#22291#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.48202246">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/Visa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="557" column="46" selection-start-line="557" selection-start-column="46" selection-end-line="557" selection-end-column="46" />
-          <folding>
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#3341#3342#0" expanded="true" />
-            <element signature="e#3380#3381#0" expanded="true" />
-            <element signature="e#4145#4146#0" expanded="true" />
-            <element signature="e#4187#4188#0" expanded="true" />
-            <element signature="e#4366#4367#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#4713#4714#0" expanded="true" />
-            <element signature="e#4759#4760#0" expanded="true" />
-            <element signature="e#4952#4953#0" expanded="true" />
-            <element signature="e#4992#4993#0" expanded="true" />
-            <element signature="e#5177#5178#0" expanded="true" />
-            <element signature="e#5207#5208#0" expanded="true" />
-            <element signature="e#5253#5254#0" expanded="true" />
-            <element signature="e#5291#5292#0" expanded="true" />
-            <element signature="e#5866#5867#0" expanded="true" />
-            <element signature="e#5901#5902#0" expanded="true" />
-            <element signature="e#5957#5958#0" expanded="true" />
-            <element signature="e#6005#6006#0" expanded="true" />
-            <element signature="e#6046#6047#0" expanded="true" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6143#6144#0" expanded="true" />
-            <element signature="e#6190#6191#0" expanded="true" />
-            <element signature="e#6247#6248#0" expanded="true" />
-            <element signature="e#6300#6301#0" expanded="true" />
-            <element signature="e#6531#6532#0" expanded="true" />
-            <element signature="e#6582#6583#0" expanded="true" />
-            <element signature="e#6794#6795#0" expanded="true" />
-            <element signature="e#6834#6835#0" expanded="true" />
-            <element signature="e#7006#7007#0" expanded="true" />
-            <element signature="e#7055#7056#0" expanded="true" />
-            <element signature="e#7253#7254#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7453#7454#0" expanded="true" />
-            <element signature="e#7495#7496#0" expanded="true" />
-            <element signature="e#7778#7779#0" expanded="true" />
-            <element signature="e#7826#7827#0" expanded="true" />
-            <element signature="e#8035#8036#0" expanded="true" />
-            <element signature="e#8077#8078#0" expanded="true" />
-            <element signature="e#8336#8337#0" expanded="true" />
-            <element signature="e#8383#8384#0" expanded="true" />
-            <element signature="e#8772#8773#0" expanded="true" />
-            <element signature="e#8818#8819#0" expanded="true" />
-            <element signature="e#9524#9525#0" expanded="true" />
-            <element signature="e#9558#9559#0" expanded="true" />
-            <element signature="e#9621#9622#0" expanded="true" />
-            <element signature="e#9662#9663#0" expanded="true" />
-            <element signature="e#9691#9692#0" expanded="true" />
-            <element signature="e#9716#9717#0" expanded="true" />
-            <element signature="e#9752#9753#0" expanded="true" />
-            <element signature="e#9780#9781#0" expanded="true" />
-            <element signature="e#9836#9837#0" expanded="true" />
-            <element signature="e#9888#9889#0" expanded="true" />
-            <element signature="e#10096#10097#0" expanded="true" />
-            <element signature="e#10133#10134#0" expanded="true" />
-            <element signature="e#10193#10194#0" expanded="true" />
-            <element signature="e#10240#10241#0" expanded="true" />
-            <element signature="e#10284#10285#0" expanded="true" />
-            <element signature="e#10324#10325#0" expanded="true" />
-            <element signature="e#10490#10491#0" expanded="true" />
-            <element signature="e#10533#10534#0" expanded="true" />
-            <element signature="e#10720#10721#0" expanded="true" />
-            <element signature="e#10772#10773#0" expanded="true" />
-            <element signature="e#10997#10998#0" expanded="true" />
-            <element signature="e#11051#11052#0" expanded="true" />
-            <element signature="e#11283#11284#0" expanded="true" />
-            <element signature="e#11336#11337#0" expanded="true" />
-            <element signature="e#11538#11539#0" expanded="true" />
-            <element signature="e#11565#11566#0" expanded="true" />
-            <element signature="e#11605#11606#0" expanded="true" />
-            <element signature="e#11632#11633#0" expanded="true" />
-            <element signature="e#11670#11671#0" expanded="true" />
-            <element signature="e#11704#11705#0" expanded="true" />
-            <element signature="e#11758#11759#0" expanded="true" />
-            <element signature="e#11799#11800#0" expanded="true" />
-            <element signature="e#11844#11845#0" expanded="true" />
-            <element signature="e#11885#11886#0" expanded="true" />
-            <element signature="e#12061#12062#0" expanded="true" />
-            <element signature="e#12110#12111#0" expanded="true" />
-            <element signature="e#12311#12312#0" expanded="true" />
-            <element signature="e#12353#12354#0" expanded="true" />
-            <element signature="e#12526#12527#0" expanded="true" />
-            <element signature="e#12568#12569#0" expanded="true" />
-            <element signature="e#12740#12741#0" expanded="true" />
-            <element signature="e#12781#12782#0" expanded="true" />
-            <element signature="e#12949#12950#0" expanded="true" />
-            <element signature="e#12990#12991#0" expanded="true" />
-            <element signature="e#13156#13157#0" expanded="true" />
-            <element signature="e#13195#13196#0" expanded="true" />
-            <element signature="e#13350#13351#0" expanded="true" />
-            <element signature="e#13386#13387#0" expanded="true" />
-            <element signature="e#13444#13445#0" expanded="true" />
-            <element signature="e#13489#13490#0" expanded="true" />
-            <element signature="e#13528#13529#0" expanded="true" />
-            <element signature="e#13563#13564#0" expanded="true" />
-            <element signature="e#13619#13620#0" expanded="true" />
-            <element signature="e#13662#13663#0" expanded="true" />
-            <element signature="e#13708#13709#0" expanded="true" />
-            <element signature="e#13750#13751#0" expanded="true" />
-            <element signature="e#13926#13927#0" expanded="true" />
-            <element signature="e#13971#13972#0" expanded="true" />
-            <element signature="e#14160#14161#0" expanded="true" />
-            <element signature="e#14206#14207#0" expanded="true" />
-            <element signature="e#14393#14394#0" expanded="true" />
-            <element signature="e#14433#14434#0" expanded="true" />
-            <element signature="e#14601#14602#0" expanded="true" />
-            <element signature="e#14646#14647#0" expanded="true" />
-            <element signature="e#14833#14834#0" expanded="true" />
-            <element signature="e#14877#14878#0" expanded="true" />
-            <element signature="e#15053#15054#0" expanded="true" />
-            <element signature="e#15090#15091#0" expanded="true" />
-            <element signature="e#15150#15151#0" expanded="true" />
-            <element signature="e#15197#15198#0" expanded="true" />
-            <element signature="e#15251#15252#0" expanded="true" />
-            <element signature="e#15293#15294#0" expanded="true" />
-            <element signature="e#15489#15490#0" expanded="true" />
-            <element signature="e#15534#15535#0" expanded="true" />
-            <element signature="e#16037#16038#0" expanded="true" />
-            <element signature="e#16081#16082#0" expanded="true" />
-            <element signature="e#16272#16273#0" expanded="true" />
-            <element signature="e#16309#16310#0" expanded="true" />
-            <element signature="e#16373#16374#0" expanded="true" />
-            <element signature="e#16420#16421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/fragment_cancel_visa_pay_and_submit.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_more_progress.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.933333">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.29662922">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisasAndCardsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/Cancel/CancelVisaMainFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-          <folding>
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
-            <element signature="e#2674#2675#0" expanded="true" />
-            <element signature="e#2731#2732#0" expanded="true" />
-            <element signature="e#2792#2793#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2911#2912#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3155#3156#0" expanded="true" />
-            <element signature="e#3835#4376#0" expanded="true" />
-            <element signature="e#4375#4376#0" expanded="true" />
-            <element signature="e#6826#6827#0" expanded="true" />
-            <element signature="e#6853#6854#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6968#6969#0" expanded="true" />
-            <element signature="e#7020#7744#0" expanded="true" />
-            <element signature="e#7355#7725#0" expanded="true" />
-            <element signature="e#7724#7725#0" expanded="true" />
-            <element signature="e#7743#7744#0" expanded="true" />
-            <element signature="e#8650#8666#0" expanded="true" />
-            <element signature="e#10498#13370#0" expanded="true" />
-            <element signature="e#10997#11028#0" expanded="true" />
-            <element signature="e#13369#13370#0" expanded="true" />
-            <element signature="e#14424#14469#0" expanded="true" />
-            <element signature="e#15382#15383#0" expanded="true" />
-            <element signature="e#15420#15421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourStepsNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="55" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps2.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/drawable/item_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15221402">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -8031,22 +6569,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/base_service_four_steps.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.6">
-          <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.33487085">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/BaseFragmentFourSteps.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_statement.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31592688">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15880655">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/ViewStatementActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8578856">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/classes.jar!/android/support/v7/widget/LinearLayoutManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9348442">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#60631#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/classes.jar!/android/support/v7/widget/RecyclerView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34175825">
+          <caret line="4792" column="26" selection-start-line="4792" selection-start-column="26" selection-end-line="4792" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44107452">
+          <caret line="1113" column="25" selection-start-line="1113" selection-start-column="25" selection-end-line="1113" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build/intermediates/exploded-aar/com.malinskiy/superrecyclerview/1.1.1/classes.jar!/com/malinskiy/superrecyclerview/SuperRecyclerView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.84">
+          <caret line="412" column="16" selection-start-line="412" selection-start-column="16" selection-end-line="412" selection-end-column="16" />
+          <folding>
+            <element signature="e#17181#17182#0" expanded="true" />
+            <element signature="e#17231#17232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_statement_item_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17853923">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/FreeZonePayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7435009">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="232" column="52" selection-start-line="232" selection-start-column="52" selection-end-line="232" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48526862">
+          <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+          <folding>
+            <element signature="e#948#966#0" expanded="true" />
+            <element signature="e#1228#1246#0" expanded="true" />
+            <element signature="e#1561#1579#0" expanded="true" />
+            <element signature="e#1737#1755#0" expanded="true" />
+            <element signature="e#1914#1932#0" expanded="true" />
+            <element signature="e#2092#2110#0" expanded="true" />
+            <element signature="e#2268#2286#0" expanded="true" />
+            <element signature="e#2447#2465#0" expanded="true" />
+            <element signature="e#2614#2632#0" expanded="true" />
+            <element signature="e#2795#2813#0" expanded="true" />
+            <element signature="e#3028#3046#0" expanded="true" />
+            <element signature="e#3207#3225#0" expanded="true" />
+            <element signature="e#3386#3404#0" expanded="true" />
+            <element signature="e#3562#3580#0" expanded="true" />
+            <element signature="e#3734#3752#0" expanded="true" />
+            <element signature="e#3915#3948#0" expanded="true" />
+            <element signature="e#4079#4112#0" expanded="true" />
+            <element signature="e#4226#4259#0" expanded="true" />
+            <element signature="e#4388#4421#0" expanded="true" />
+            <element signature="e#4547#4580#0" expanded="true" />
+            <element signature="e#4707#4740#0" expanded="true" />
+            <element signature="e#4864#4897#0" expanded="true" />
+            <element signature="e#5016#5049#0" expanded="true" />
+            <element signature="e#5167#5200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/ViewStatementAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2934#3144#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3201#3429#0" expanded="true" />
+            <element signature="e#3428#3429#0" expanded="true" />
+            <element signature="e#3473#3701#0" expanded="true" />
+            <element signature="e#3700#3701#0" expanded="true" />
+            <element signature="e#3750#3978#0" expanded="true" />
+            <element signature="e#3977#3978#0" expanded="true" />
+            <element signature="e#4024#4252#0" expanded="true" />
+            <element signature="e#4251#4252#0" expanded="true" />
+            <element signature="e#4303#4531#0" expanded="true" />
+            <element signature="e#4530#4531#0" expanded="true" />
+            <element signature="e#4578#4806#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
+            <element signature="e#4858#5086#0" expanded="true" />
+            <element signature="e#5085#5086#0" expanded="true" />
+            <element signature="e#5132#5360#0" expanded="true" />
+            <element signature="e#5359#5360#0" expanded="true" />
+            <element signature="e#5411#5639#0" expanded="true" />
+            <element signature="e#5638#5639#0" expanded="true" />
+            <element signature="e#5699#5927#0" expanded="true" />
+            <element signature="e#5926#5927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="198" column="82" selection-start-line="198" selection-start-column="82" selection-end-line="198" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5311#8440#0" expanded="true" />
+            <element signature="e#5766#5797#0" expanded="true" />
+            <element signature="e#6062#8296#0" expanded="true" />
+            <element signature="e#6755#7898#0" expanded="true" />
+            <element signature="e#7897#7898#0" expanded="true" />
+            <element signature="e#8295#8296#0" expanded="true" />
+            <element signature="e#8439#8440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/show_details_view_statement.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45472836">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/activity/ViewStatementShowDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87102985">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1878#2020#0" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

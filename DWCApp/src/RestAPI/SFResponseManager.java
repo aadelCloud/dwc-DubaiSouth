@@ -1113,7 +1113,20 @@ public class SFResponseManager {
                 JSONObject jsonObject1 = jArrayRecords.getJSONObject(i);
                 FreeZonePayment freeZonePayment = new FreeZonePayment();
                 freeZonePayment = gson.fromJson(jsonObject1.toString(), FreeZonePayment.class);
-                freeZonePayment.setEmployeeName(jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r").getString("Name"));
+                if (jsonObject1.getJSONObject("Request__r") != null) {
+                    if(jsonObject1.getJSONObject("Request__r").toString().contains("\"Employee_Ref__r\":null")){
+                        freeZonePayment.setEmployeeName("");
+                    }else{
+                        if (jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r") != null) {
+                            freeZonePayment.setEmployeeName(jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r").getString("Name"));
+                        } else {
+                            freeZonePayment.setEmployeeName("");
+                        }
+                    }
+                } else {
+                    freeZonePayment.setEmployeeName("");
+                }
+
                 freeZonePayments.add(freeZonePayment);
             }
         } catch (JSONException e) {

@@ -117,6 +117,10 @@
             android:name="fragmentActivity.ViewStatementActivity"
             android:label="@string/title_activity_main_noc"></activity>
 
+        <activity
+            android:name="activity.ViewStatementShowDetails"
+            android:label="@string/title_activity_main_noc"></activity>
+
 
 
 

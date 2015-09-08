@@ -12,6 +12,8 @@
     <color name="live_color">#A69940</color>
     <color name="improve_color">#505959</color>
     <color name="white">#FFFFFF</color>
+    <color name="backgroundColor">@color/background_material_dark</color>
+    <color name="backgroundColorPress">@color/accent_material_dark</color>
     <color name="text_color">#FFFFFF</color>
     <color name="divider_color">#11000000</color>
     <color name="msg_color">#FFFFFFFF</color>
