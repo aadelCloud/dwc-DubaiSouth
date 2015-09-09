@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 import cloudconcept.dwc.R;
 import model.Card_Management__c;
-import model.Contract_DWC__c;
-import model.Directorship;
+import model.Company_Documents__c;
+import model.EServices_Document_Checklist__c;
 import model.ServiceItem;
-import model.User;
+import model.ShareOwnership;
 import model.Visa;
 import utilities.ActivitiesLauncher;
 
@@ -57,7 +57,7 @@ public class HorizontalListViewAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             LayoutInflater mInflater = (LayoutInflater)
                     context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
@@ -98,28 +98,24 @@ public class HorizontalListViewAdapter extends BaseAdapter {
                     } else if (tvServiceName.getText().toString().equals("Replace Card")) {
                         ActivitiesLauncher.openCardActivity(context, card, "4");
                     }
-                } else if (object instanceof Contract_DWC__c) {
-                    Contract_DWC__c contract_dwc__c = (Contract_DWC__c) object;
-                    if (tvServiceName.getText().toString().equals("Show Details")) {
-                        ActivitiesLauncher.openShowContractDetailsActivity(context, contract_dwc__c);
+                } else if (object instanceof ShareOwnership) {
+                    ShareOwnership shareHolder = (ShareOwnership) object;
+                    if (tvServiceName.getText().toString().equals("Share Holder")) {
+                        ActivitiesLauncher.openShareHolderActivity(context, shareHolder, "2", _items.get(position).getObjects());
                     }
-                } else if (object instanceof User) {
-                    User user = (User) object;
-                    if (tvServiceName.getText().toString().equals("New NOC Company")) {
-                        ActivitiesLauncher.openCompanyNocActivity(context);
-                    } else if (tvServiceName.getText().toString().equals("Name Reservation")) {
-                        ActivitiesLauncher.openNameReservationActivity(context);
-                    } else if (tvServiceName.getText().toString().equals("Address Change")) {
-                        ActivitiesLauncher.openGenericChangeAndRemovalActivity(context, "Address Change", object);
-                    } else if (tvServiceName.getText().toString().equals("Name Change")) {
-                        ActivitiesLauncher.openGenericChangeAndRemovalActivity(context, "Name Change", object);
-                    } else if (tvServiceName.getText().toString().equals("Capital Change")) {
-                        ActivitiesLauncher.openGenericChangeAndRemovalActivity(context, "Capital Change", object);
+                } else if (object instanceof EServices_Document_Checklist__c) {
+                    EServices_Document_Checklist__c eServices_document_checklist__c = (EServices_Document_Checklist__c) object;
+                    if (tvServiceName.getText().toString().equals("Preview")) {
+                        ActivitiesLauncher.openCustomerDocumentsPreviewActivity(context, eServices_document_checklist__c);
+                    } else if (tvServiceName.getText().toString().equals("Request True Copy")) {
+                        ActivitiesLauncher.openCompanyDocumentsRequestTrueCopyActivity(context, eServices_document_checklist__c);
                     }
-                } else if (object instanceof Directorship) {
-                    if (tvServiceName.getText().toString().equals("Director Removal")) {
-                        ActivitiesLauncher.openGenericChangeAndRemovalActivity(context, "Director Removal", object);
-                    } else if (tvServiceName.getText().toString().equals("Show Details")) {
+                } else if (object instanceof Company_Documents__c) {
+                    Company_Documents__c company_documents__c = (Company_Documents__c) object;
+                    if (tvServiceName.getText().toString().equals("Preview")) {
+                        ActivitiesLauncher.openCustomerDocumentsPreviewActivity(context, company_documents__c);
+                    } else if (tvServiceName.getText().toString().equals("Edit")) {
+                        ActivitiesLauncher.openCustomerDocumentsEditActivity(context, company_documents__c);
                     }
                 }
             }

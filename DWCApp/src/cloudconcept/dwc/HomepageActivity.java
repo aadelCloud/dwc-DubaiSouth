@@ -212,7 +212,7 @@ relativeViewStatement.setOnClickListener(this);
 
         } else if (v == relativeCompanyDocuments || v == imageCompanyDocuments) {
 
-            ActivitiesLauncher.openCompanyDocumentsActivity(getApplicationContext());
+            ActivitiesLauncher.openHomeCompanyDocumentsActivity(getApplicationContext());
             imageCompanyDocuments.setSelected(true);
 
         }else if(v==btnViewStatement||v==relativeViewStatement){

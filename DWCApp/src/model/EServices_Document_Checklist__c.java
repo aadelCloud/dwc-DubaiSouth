@@ -23,6 +23,8 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
 
     @JsonProperty("attributes")
     attributes attributes;
+    @JsonProperty("Id")
+    private String Id;
 
     private QueryResult activityHistories;
 
@@ -33,7 +35,8 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
     @JsonProperty("Authority__c")
     @SerializedName("Authority__c")
     private String authority__c;
-
+    @JsonProperty("Available_for_Preview__c")
+    @SerializedName("Available_for_Preview__c")
     private Boolean available_for_Preview__c;
 
     private QueryResult cases__r;
@@ -113,7 +116,8 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
     private QueryResult notesAndAttachments;
 
     private QueryResult openActivities;
-
+@JsonProperty("Original_can_be_Requested__c")
+@SerializedName("Original_can_be_Requested__c")
     private Boolean original_can_be_Requested__c;
 
     private String payment_eService__c;
@@ -155,7 +159,8 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
     private QueryResult tasks;
 
     private String template_Attached_Id__c;
-
+    @JsonProperty("Template_Name_Link__c")
+    @SerializedName("Template_Name_Link__c")
     private String template_Name_Link__c;
 
     private QueryResult topicAssignments;
@@ -168,8 +173,8 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
 
     private String eService_Administration__c;
 
-    @SerializedName("EService_Administration__r")
-    @JsonProperty("EService_Administration__r")
+    @SerializedName("eService_Administration__r")
+    @JsonProperty("eService_Administration__r")
     private Receipt_Template__c eService_Administration__r;
 
     @SerializedName("EService_Type__c")
@@ -1519,4 +1524,37 @@ public class EServices_Document_Checklist__c extends SObject implements java.io.
         this.eService_Type__c = eService_Type__c;
     }
 
+    @Override
+    public String getId() {
+        return Id;
+    }
+
+    @Override
+    public void setId(String id) {
+        Id = id;
+    }
+
+    public String geteService_Administration__c() {
+        return eService_Administration__c;
+    }
+
+    public void seteService_Administration__c(String eService_Administration__c) {
+        this.eService_Administration__c = eService_Administration__c;
+    }
+
+    public Receipt_Template__c geteService_Administration__r() {
+        return eService_Administration__r;
+    }
+
+    public void seteService_Administration__r(Receipt_Template__c eService_Administration__r) {
+        this.eService_Administration__r = eService_Administration__r;
+    }
+
+    public String geteService_Type__c() {
+        return eService_Type__c;
+    }
+
+    public void seteService_Type__c(String eService_Type__c) {
+        this.eService_Type__c = eService_Type__c;
+    }
 }

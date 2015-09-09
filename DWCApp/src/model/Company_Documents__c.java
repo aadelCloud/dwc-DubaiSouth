@@ -63,6 +63,7 @@ public class Company_Documents__c  implements java.io.Serializable {
     private Account company__r;
 
     @JsonProperty("Party__r")
+    @SerializedName("Party__r")
     Party party;
 
 

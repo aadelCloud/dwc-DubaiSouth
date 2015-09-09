@@ -131,7 +131,7 @@ public class Receipt_Template__c extends SObject implements java.io.Serializable
     private Boolean isDeleted;
 
     private Boolean is_Active__c;
-@SerializedName("Knowledge_Fee__c")
+    @SerializedName("Knowledge_Fee__c")
     private String knowledge_Fee__c;
     @SerializedName("Knowledge_Fee__r")
     private Receipt_Template__c knowledge_Fee__r;
@@ -181,9 +181,11 @@ public class Receipt_Template__c extends SObject implements java.io.Serializable
 
     @JsonProperty("RecordTypeId")
     private String recordTypeId;
-
+    @JsonProperty("Record_Type_Picklist__c")
+    @SerializedName("Record_Type_Picklist__c")
     private String record_Type_Picklist__c;
-
+    @JsonProperty("Redirect_Page__c")
+    @SerializedName("Redirect_Page__c")
     private String redirect_Page__c;
 
     @JsonProperty("Related_to_Object__c")
@@ -281,7 +283,7 @@ public class Receipt_Template__c extends SObject implements java.io.Serializable
     @SerializedName("IsAvailableOnPortal__c")
     private Boolean isAvailableOnPortal__c;
 
-//@JsonProperty("records")
+    //@JsonProperty("records")
     ArrayList<EServices_Document_Checklist__c> eServices_document_checklist__c;
 
     public ArrayList<EServices_Document_Checklist__c> geteServices_document_checklist__c() {
@@ -291,7 +293,6 @@ public class Receipt_Template__c extends SObject implements java.io.Serializable
     public void seteServices_document_checklist__c(ArrayList<EServices_Document_Checklist__c> eServices_document_checklist__c) {
         this.eServices_document_checklist__c = eServices_document_checklist__c;
     }
-
 
 
     public Receipt_Template__c() {

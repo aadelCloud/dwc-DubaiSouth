@@ -81,7 +81,12 @@ public class PermanentEmployeeListAdapter extends ClickableListAdapter {
 
         Date VisaDate = null;
         try {
-            VisaDate = sdf.parse(mo.getVisa_Expiry_Date__c());
+            if(mo.getVisa_Expiry_Date__c()!=null){
+                VisaDate = sdf.parse(mo.getVisa_Expiry_Date__c());
+            }else{
+                VisaDate=null;
+            }
+
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -94,8 +99,10 @@ public class PermanentEmployeeListAdapter extends ClickableListAdapter {
                 _items.add(new ServiceItem("Cancel Visa", R.drawable.cancel_visa));
             }
 
-        } else if (VisaDate != null & AutomaticUtilities.daysBetween(VisaDate, System.currentTimeMillis()) < 60) {
-            _items.add(new ServiceItem("Renew Visa", R.drawable.renew_visa));
+        } else if (VisaDate != null ) {
+            if(AutomaticUtilities.daysBetween(VisaDate, System.currentTimeMillis()) < 60){
+                _items.add(new ServiceItem("Renew Visa", R.drawable.renew_visa));
+            }
         }
 
         _items.add(new ServiceItem("Show Details", R.drawable.service_show_details));

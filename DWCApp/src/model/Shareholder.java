@@ -2,10 +2,12 @@ package model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  * Created by Abanoub on 7/7/2015.
  */
-public class Shareholder {
+public class Shareholder implements Serializable {
 
     String url;
     @SerializedName("Id")

@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import com.google.gson.Gson;
 import com.salesforce.androidsdk.app.SalesforceSDKManager;
@@ -40,7 +41,7 @@ import utilities.Utilities;
 public class NeedHelpFragment extends Fragment implements View.OnClickListener {
 
     static String[] needHelpValues;
-    MaterialSpinner spinnerNeedHelp;
+    Spinner spinnerNeedHelp;
     EditText etCaseSubject;
     EditText etDescription;
     Button btnSubmit;
@@ -71,7 +72,7 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
         etCaseSubject = (EditText) view.findViewById(R.id.etCaseSubject);
         etDescription = (EditText) view.findViewById(R.id.etDescription);
         btnSubmit = (Button) view.findViewById(R.id.btnSubmit);
-        spinnerNeedHelp = (MaterialSpinner) view.findViewById(R.id.spinnetNeedHelpType);
+        spinnerNeedHelp = (Spinner) view.findViewById(R.id.spinnetNeedHelpType);
         btnSubmit.setOnClickListener(this);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, needHelpValues);
         spinnerNeedHelp.setAdapter(adapter);
@@ -102,7 +103,7 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
                         SalesforceSDKManager.getInstance().logout(getActivity());
                         return;
                     } else {
-                        Utilities.showloadingDialog(getActivity());
+
                         clientManager = client;
                         client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
 
@@ -133,16 +134,17 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
     }
 
     private void ValidateFields() {
-        String soql = "";
+
         if (etCaseSubject.getText().toString().equals("") || etDescription.getText().toString().equals("") || NeedHelpCategory.equals("")) {
             Utilities.showToast(getActivity(), "Please fill the required fields");
             return;
         } else {
+
             Gson gson = new Gson();
             Map<String, Object> fields = new HashMap<String, Object>();
             fields.put("Type", NeedHelpCategory);
             fields.put("ContactId", Utilities.getUserObject(getActivity().getApplicationContext()).getContactId());
-            fields.put("AccountId", Utilities.getUserObject(getActivity().getApplicationContext()));
+            fields.put("AccountId", Utilities.getUserObject(getActivity().getApplicationContext()).get_contact().get_account().getID());
             fields.put("Subject", etCaseSubject.getText().toString());
             fields.put("Description", etDescription.getText().toString());
             fields.put("RecordTypeId", caseRecordTypeId);
@@ -171,7 +173,7 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
                                 SalesforceSDKManager.getInstance().logout(getActivity());
                                 return;
                             } else {
-                                Utilities.showloadingDialog(getActivity());
+
                                 clientManager.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
 
                                     @Override
@@ -184,6 +186,7 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
                                             Utilities.dismissLoadingDialog();
                                         } catch (JSONException e) {
                                             e.printStackTrace();
+                                            Utilities.dismissLoadingDialog();
                                         }
                                     }
 

@@ -512,6 +512,7 @@ public class ChangeAndRemovalServiceFragment extends BaseFragmentFourSteps {
                 try {
                     jsonObject = new JSONObject();
 //                    jsonObject.put("directorId", activity.getDirectorship().getID());
+                    jsonObject.put("AccountId", activity.getUser().get_contact().get_account().getID());
                     jsonObject.put("newEnName", activity.getNewCompanyName());
                     jsonObject.put("newARName", activity.getNewCompanyNameArabic());
                     jsonObject.put("actionType", activity.getMethodName());

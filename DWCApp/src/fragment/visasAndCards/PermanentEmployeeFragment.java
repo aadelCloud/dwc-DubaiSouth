@@ -42,7 +42,6 @@ import utilities.Utilities;
  */
 public class PermanentEmployeeFragment extends Fragment {
 
-
     private static final String ARG_TEXT = "PermanentEmployee";
     static String strFilter;
     public boolean iscalledFromRefresh = false;

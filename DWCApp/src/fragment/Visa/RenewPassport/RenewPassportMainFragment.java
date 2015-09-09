@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.android.volley.NetworkResponse;
 import com.android.volley.VolleyError;
@@ -64,7 +65,7 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         activity=(VisaActivity)getActivity();
-        //
+       //
         return super.onCreateView(inflater, container, savedInstanceState);
 
     }
@@ -114,90 +115,90 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
             if (getStatus() == 1) {
                 if (required()){
                     String Expiry = activity.getNewPassport().getPassport_Expiry_Date__c();
-                    long yourmilliseconds = System.currentTimeMillis();
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                    Date resultdate = new Date(yourmilliseconds);
-                    Calendar now = Calendar.getInstance();
-                    now.setTime(resultdate);
-                    try {
-                        Date expiryDate = sdf.parse(Expiry);
-                        now.add(Calendar.MONTH, 6);
+                long yourmilliseconds = System.currentTimeMillis();
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                Date resultdate = new Date(yourmilliseconds);
+                Calendar now = Calendar.getInstance();
+                now.setTime(resultdate);
+                try {
+                    Date expiryDate = sdf.parse(Expiry);
+                    now.add(Calendar.MONTH, 6);
 
 
-                        if (sdf.parse(sdf.format(now.getTime())).compareTo(expiryDate) < 0) {
-                            Utilities.showloadingDialog(activity);
-                            new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
-                                        @Override
-                                        public void authenticatedRestClient(final RestClient client) {
-                                            if (client == null) {
-                                                System.exit(0);
+                    if (sdf.parse(sdf.format(now.getTime())).compareTo(expiryDate) < 0) {
+                        Utilities.showloadingDialog(activity);
+                        new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
+                                    @Override
+                                    public void authenticatedRestClient(final RestClient client) {
+                                        if (client == null) {
+                                            System.exit(0);
+                                        } else {
+                                            if (activity.getVisa().getPassport_Number__c().equals(activity.getNewPassport().getName())) {
+                                                Utilities.dismissLoadingDialog();
+                                                new AsyncCreateCase(client).execute();
+
                                             } else {
-                                                if (activity.getVisa().getPassport_Number__c().equals(activity.getNewPassport().getName())) {
-                                                    Utilities.dismissLoadingDialog();
-                                                    new AsyncCreateCase(client).execute();
+                                                try {
+                                                    restRequest = RestRequest.getRequestForQuery(activity.getString(R.string.api_version), "select id from Passport__c where name = '" + activity.getNewPassport().getName() + "' and Passport_Issue_Country__c ='" + activity.getVisa().getPassport_Issue_Country__c() + "'");
+                                                    client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
+                                                                @Override
+                                                                public void onSuccess(RestRequest request, RestResponse response) {
+                                                                    JSONObject jsonVisas = null;
+                                                                    try {
+                                                                        jsonVisas = new JSONObject(response.toString());
+                                                                        if (jsonVisas.optBoolean(JSONConstants.DONE)) {
 
-                                                } else {
-                                                    try {
-                                                        restRequest = RestRequest.getRequestForQuery(activity.getString(R.string.api_version), "select id from Passport__c where name = '" + activity.getNewPassport().getName() + "' and Passport_Issue_Country__c ='" + activity.getVisa().getPassport_Issue_Country__c() + "'");
-                                                        client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
-                                                                    @Override
-                                                                    public void onSuccess(RestRequest request, RestResponse response) {
-                                                                        JSONObject jsonVisas = null;
-                                                                        try {
-                                                                            jsonVisas = new JSONObject(response.toString());
-                                                                            if (jsonVisas.optBoolean(JSONConstants.DONE)) {
-
-                                                                                JSONArray jsonArrayVisas = jsonVisas.getJSONArray(JSONConstants.RECORDS);
-                                                                                if (jsonArrayVisas.length() > 0) {
-                                                                                    Utilities.showLongToast(activity, "A duplicate entry found in the system with the same Passport number and Passport Issue country.");
-                                                                                    Utilities.dismissLoadingDialog();
-                                                                                } else {
-                                                                                    Utilities.dismissLoadingDialog();
-                                                                                    new AsyncCreateCase(client).execute();
-
-                                                                                }
+                                                                            JSONArray jsonArrayVisas = jsonVisas.getJSONArray(JSONConstants.RECORDS);
+                                                                            if (jsonArrayVisas.length() > 0) {
+                                                                                Utilities.showLongToast(activity, "A duplicate entry found in the system with the same Passport number and Passport Issue country.");
+                                                                                Utilities.dismissLoadingDialog();
+                                                                            } else {
+                                                                                Utilities.dismissLoadingDialog();
+                                                                                new AsyncCreateCase(client).execute();
 
                                                                             }
-                                                                        } catch (JSONException e) {
-                                                                            e.printStackTrace();
-                                                                            Utilities.dismissLoadingDialog();
+
                                                                         }
-
-                                                                    }
-
-                                                                    @Override
-                                                                    public void onError(Exception exception) {
+                                                                    } catch (JSONException e) {
+                                                                        e.printStackTrace();
                                                                         Utilities.dismissLoadingDialog();
                                                                     }
+
                                                                 }
 
-                                                        );
-                                                    } catch (UnsupportedEncodingException e) {
-                                                        e.printStackTrace();
-                                                    }
+                                                                @Override
+                                                                public void onError(Exception exception) {
+                                                                    Utilities.dismissLoadingDialog();
+                                                                }
+                                                            }
+
+                                                    );
+                                                } catch (UnsupportedEncodingException e) {
+                                                    e.printStackTrace();
                                                 }
+                                            }
 //
 
 
-                                            }
                                         }
                                     }
+                                }
 
-                            );
+                        );
 
-                        } else {
-                            Utilities.showLongToast(activity, "passport validity should be at least 6 months from today");
-                        }
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                        Utilities.showLongToast(activity, "Expiry Date should be Valid (YYYY-MM-DD)");
+                    } else {
+                        Utilities.showLongToast(activity, "passport validity should be at least 6 months from today");
                     }
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                    Utilities.showLongToast(activity, "Expiry Date should be Valid (YYYY-MM-DD)");
+                }
 
 
-                }else{
+            }else{
                     Utilities.showLongToast(activity, "Please fill all required fields");
                 }
-            }else if (getStatus() == 3) {
+        }else if (getStatus() == 3) {
                 if (!isValidAttachments()) {
                     Utilities.showLongToast(activity, "Please fill all attachments");
                 } else {
@@ -311,7 +312,7 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
 
         @Override
         protected String doInBackground(String... params) {
-            String attUrl = client.getClientInfo().resolveUrl("/services/apexrest/MobilePayAndSubmitWebService").toString();
+            String attUrl = client.getClientInfo().resolveUrl("/services/apexrest/MobileServiceUtilityWebService").toString();
 
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(attUrl);
@@ -320,7 +321,8 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
             try {
                 Map<String, String> map = new HashMap<String, String>();
                 map.put("caseId", activity.getInsertedCaseId());
-                entity = new StringEntity(new JSONObject(map).toString(), "UTF-8");
+                map.put("actionType","SubmitRequestPassportRenewal");
+                entity = new StringEntity("{\"wrapper\":" + new JSONObject(map).toString() + "}", "UTF-8");
                 entity.setContentType("application/json");
                 httppost.setEntity(entity);
                 HttpResponse response = httpclient.execute(httppost);
@@ -358,12 +360,18 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
 
         public AsyncCreateCase(RestClient client) {
             this.client = client;
+
         }
 
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            Utilities.showloadingDialog(activity);
+        }
 
         @Override
         protected String doInBackground(Void... voids) {
-            String attUrl = client.getClientInfo().resolveUrl("/services/apexrest/MobilePassportRenewalWebService").toString();
+            String attUrl = client.getClientInfo().resolveUrl("/services/apexrest/MobileServiceUtilityWebService").toString();
 
             DefaultHttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(attUrl);
@@ -377,7 +385,7 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
             map.put("PassportHolderId", activity.getNewPassport().getPassport_Holder__c());
             map.put("passportIssueDate", activity.getNewPassport().getPassport_Issue_Date__c());
             map.put("passportExpiryDate", activity.getNewPassport().getPassport_Expiry_Date__c());
-            map.put("actionType","CreateRequest");
+            map.put("actionType","CreateRequestPassportRenewal");
 
             StringEntity entity = null;
             try {
@@ -404,56 +412,66 @@ public class RenewPassportMainFragment extends BaseFragmentFourStepsNew {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if (s != null) {
-                activity.setInsertedCaseId(s.replace("\"", ""));
+                String resul=s.replace("\"", "");
 
-                new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
-                    @Override
-                    public void authenticatedRestClient(final RestClient client) {
-                        if (client == null) {
-                            SalesforceSDKManager.getInstance().logout(getActivity());
-                            return;
-                        } else {
+                if(resul.equals("Duplication")){
+                    Utilities.dismissLoadingDialog();
+                    Utilities.showLongToast(activity,"Duplication");
+                }else if(resul.startsWith("Success")){
+                    activity.setInsertedCaseId(resul.replace("Success",""));
 
-                            try {
-                                restRequest = RestRequest.getRequestForQuery(getString(R.string.api_version), SoqlStatements.getCaseNumberQuery(activity.getInsertedCaseId()));
-                            } catch (UnsupportedEncodingException e) {
-                                e.printStackTrace();
-                            }
-                            client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
-                                @Override
-                                public void onSuccess(RestRequest request, RestResponse response) {
-                                    JSONObject jsonObject = null;
-                                    try {
-                                        jsonObject = new JSONObject(response.toString());
-                                        JSONArray jsonArray = jsonObject.getJSONArray(JSONConstants.RECORDS);
-                                        JSONObject jsonRecord = jsonArray.getJSONObject(0);
-                                        Log.d("result", response.toString());
-                                        activity.setCaseNumber(jsonRecord.getString("CaseNumber"));
-                                        activity.setService_Requested__c(jsonRecord.getString("Service_Requested__c"));
 
-                                        createVisaRecord(client);
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
+                    new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
+                        @Override
+                        public void authenticatedRestClient(final RestClient client) {
+                            if (client == null) {
+                                SalesforceSDKManager.getInstance().logout(getActivity());
+                                return;
+                            } else {
+
+                                try {
+                                    restRequest = RestRequest.getRequestForQuery(getString(R.string.api_version), SoqlStatements.getCaseNumberQuery(activity.getInsertedCaseId()));
+                                } catch (UnsupportedEncodingException e) {
+                                    e.printStackTrace();
+                                }
+                                client.sendAsync(restRequest, new RestClient.AsyncRequestCallback() {
+                                    @Override
+                                    public void onSuccess(RestRequest request, RestResponse response) {
+                                        JSONObject jsonObject = null;
+                                        try {
+                                            jsonObject = new JSONObject(response.toString());
+                                            JSONArray jsonArray = jsonObject.getJSONArray(JSONConstants.RECORDS);
+                                            JSONObject jsonRecord = jsonArray.getJSONObject(0);
+                                            Log.d("result", response.toString());
+                                            activity.setCaseNumber(jsonRecord.getString("CaseNumber"));
+                                            activity.setService_Requested__c(jsonRecord.getString("Service_Requested__c"));
+
+                                            createVisaRecord(client);
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+
                                     }
 
-                                }
+                                    @Override
+                                    public void onError(Exception exception) {
+                                        VolleyError volleyError = (VolleyError) exception;
+                                        NetworkResponse response = volleyError.networkResponse;
+                                        String json = new String(response.data);
+                                        Log.d("", json);
+                                        Utilities.dismissLoadingDialog();
+                                        getActivity().finish();
+                                    }
+                                });
 
-                                @Override
-                                public void onError(Exception exception) {
-                                    VolleyError volleyError = (VolleyError) exception;
-                                    NetworkResponse response = volleyError.networkResponse;
-                                    String json = new String(response.data);
-                                    Log.d("", json);
-                                    Utilities.dismissLoadingDialog();
-                                    getActivity().finish();
-                                }
-                            });
+                            }
 
                         }
-
-                    }
-                });
-
+                    });
+                }else{
+                    Utilities.dismissLoadingDialog();
+                    Utilities.showLongToast(activity,"There is an error");
+                }
             }
 
         }

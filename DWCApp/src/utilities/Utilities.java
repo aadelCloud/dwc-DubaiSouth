@@ -57,6 +57,7 @@ import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -857,6 +858,106 @@ public class Utilities {
 
 
     }
+
+    public static String[] formatStartAndEndDate(String filterItem) {
+
+//        Calendar calendar = Calendar.getInstance();
+//        int currentMonth = calendar.get(Calendar.MONTH) + 1;
+//        int currentYear = calendar.get(Calendar.YEAR);
+//        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+//        Calendar calendar1 = getDateCalendar(currentYear, currentMonth, currentDay);
+//        Date quarterStartDate = new Date();
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        if (currentMonth >= 1 && currentMonth <= 3) {
+//            sdf.format(calendar1.getTime());
+////            quarterStartDate = getDate(currentYear, 1, 1);
+//            quarterStartDate = getDate(currentYear, 1, 1);
+//        } else if (currentMonth >= 4 && currentMonth <= 6) {
+//            quarterStartDate = getDate(currentYear, 4, 1);
+//        } else if (currentMonth >= 7 && currentMonth <= 9) {
+//            quarterStartDate = getDate(currentYear, 7, 1);
+//        } else if (currentMonth >= 10 && currentMonth <= 12) {
+//            quarterStartDate = getDate(currentYear, 10, 1);
+//        }
+//
+//        if (filterItem.equals("Current Quarter")) {
+//
+//            startDate = sdf.parse(String.valueOf(quarterStartDate));
+//            calendar = Calendar.getInstance();
+//            calendar.add(Calendar.MONTH, 3);
+//            endDate = sdf.parse(String.valueOf(calendar.getTime()));
+//
+//        } else if (filterItem.equals("Last Quarter")) {
+//            calendar = Calendar.getInstance();
+//            calendar.add(Calendar.MONTH, -3);
+//            startDate = sdf.parse(String.valueOf(calendar.getTime()));
+//            endDate = sdf.parse(String.valueOf(quarterStartDate));
+//        } else if (filterItem.equals("Current Year")) {
+//            startDate = sdf.parse(String.valueOf(getDate(currentYear, 1, 1)));
+//            calendar = Calendar.getInstance();
+//            calendar.add(Calendar.YEAR, 1);
+//            endDate = sdf.parse(String.valueOf(calendar.getTime()));
+//        } else if (filterItem.equals("Last Year")) {
+//            calendar = Calendar.getInstance();
+//            calendar.add(Calendar.YEAR, -1);
+//            startDate = sdf.parse(String.valueOf(getDate(currentYear, 1, 1)));
+//            endDate = sdf.parse(String.valueOf(quarterStartDate));
+//        }
+//
+//        return new Date[]{startDate, endDate};
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar calendar = Calendar.getInstance();
+        int currentYear = calendar.get(Calendar.YEAR);
+        int currentMonth = calendar.get(Calendar.MONTH) + 1;
+        int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
+        calendar.set(currentYear, currentMonth - 1, currentDay);
+        String date1 = sdf.format(calendar.getTime());
+        String startDate = null, endDate = null;
+        if (filterItem.equals("Current Quarter")) {
+
+            startDate = date1;
+            calendar.add(Calendar.MONTH, 3);
+            endDate = sdf.format(calendar.getTime());
+
+        } else if (filterItem.equals("Last Quarter")) {
+
+            calendar.add(Calendar.MONTH, -3);
+            startDate = sdf.format(calendar.getTime());
+            endDate = date1;
+
+        } else if (filterItem.equals("Current Year")) {
+            startDate = date1;
+            calendar.add(Calendar.YEAR, 1);
+            endDate = sdf.format(calendar.getTime());
+
+        } else if (filterItem.equals("Last Year")) {
+            calendar.add(Calendar.YEAR, -1);
+            startDate = sdf.format(calendar.getTime());
+            endDate = date1;
+        }
+        return new String[]{startDate, endDate};
+    }
+
+//    public static Calendar getDateCalendar(int year, int month, int day) throws ParseException {
+//        Calendar calendar = Calendar.getInstance();
+////        cal.set(Calendar.YEAR, year);
+////        cal.set(Calendar.MONTH, month);
+////        cal.set(Calendar.DAY_OF_MONTH, day);
+////        cal.set(Calendar.HOUR_OF_DAY, 0);
+////        cal.set(Calendar.MINUTE, 0);
+////        cal.set(Calendar.SECOND, 0);
+////        cal.set(Calendar.MILLISECOND, 0);
+//        calendar.clear();
+//        calendar.set(Calendar.MONTH, month);
+//        calendar.set(Calendar.YEAR, year);
+//        calendar.set(Calendar.DAY_OF_MONTH, day);
+//        return calendar;
+//    }
+//
+//    public static Date getEndDate(Date date) {
+//
+//    }
+
 
     private static class DownloadAttachmentBodyForRoundedImage extends AsyncTask<Void, Void, Void> {
 

@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 import RestAPI.SFResponseManager;
 import RestAPI.SoqlStatements;
-import adapter.companyInfoAdapters.ShareHolderAdapter;
+import adapter.ShareHolderAdapter;
 import cloudconcept.dwc.R;
 import dataStorage.StoreData;
 import model.SFServiceCall;

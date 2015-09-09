@@ -12,6 +12,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -24,12 +27,15 @@ import com.salesforce.androidsdk.rest.RestRequest;
 import com.salesforce.androidsdk.rest.RestResponse;
 
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 
 import RestAPI.SFResponseManager;
 import RestAPI.SoqlStatements;
 import adapter.ViewStatementAdapter;
 import cloudconcept.dwc.R;
+import custom.MaterialSpinner;
 import dataStorage.StoreData;
 import fragmentActivity.ViewStatementActivity;
 import model.FreeZonePayment;
@@ -137,15 +143,21 @@ public class ViewStatementFragment extends Fragment implements SwipeRefreshLayou
     int offset = 0;
     private User user;
     RestRequest restRequest;
+    Spinner spinnerViewStatementFilter;
+    String[] filterItems = new String[]{"Current Quarter", "Last Quarter", "Current Year", "Last Year", "All Time"};
+    String startDate = "", endDate = "";
+    private String queryFilter = "";
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.view_statement, container, false);
+        spinnerViewStatementFilter = (Spinner) view.findViewById(R.id.spinnerViewStatementFilter);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, filterItems);
+        spinnerViewStatementFilter.setAdapter(adapter);
+        spinnerViewStatementFilter.setSelection(0);
         InitializeViews(view);
-        mHandler = new Handler(Looper.getMainLooper());
-        onRefresh();
         return view;
     }
 
@@ -154,32 +166,60 @@ public class ViewStatementFragment extends Fragment implements SwipeRefreshLayou
         activity = (ViewStatementActivity) getActivity();
         mRecycler = (SuperRecyclerView) view.findViewById(R.id.list);
         mRecycler.setLayoutManager(new LinearLayoutManager(getActivity()));
+        spinnerViewStatementFilter.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position != -1) {
+                    queryFilter = ConstructDateRangeFilter(filterItems[position]);
+                    CallFreeZonePaymentRequest(offset, limit, queryFilter);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         mRecycler.setRefreshListener(this);
         mRecycler.setRefreshingColorResources(android.R.color.holo_orange_light, android.R.color.holo_blue_light, android.R.color.holo_green_light, R.color.dwc_blue_color);
         mRecycler.setupMoreListener(this, 20);
+        mHandler = new Handler(Looper.getMainLooper());
+        onRefresh();
+    }
+
+    private String ConstructDateRangeFilter(String filterItem) {
+        queryFilter = "";
+        if (!filterItem.equals("All Time")) {
+            String[] dates = Utilities.formatStartAndEndDate(filterItem);
+            startDate = dates[0];
+            endDate = dates[1];
+            queryFilter = String.format("CreatedDate >= %s AND CreatedDate <= %s", startDate, endDate);
+        }
+
+        return queryFilter;
     }
 
     @Override
     public void onMoreAsked(int i, int i1, int i2) {
         mRecycler.setupMoreListener(this, 20);
-        CallFreeZonePaymentRequest(offset, limit);
+        CallFreeZonePaymentRequest(offset, limit, queryFilter);
     }
 
     @Override
     public void onRefresh() {
         offset = 0;
-        mRecycler.setLoadingMore(false);
-        CallFreeZonePaymentRequest(offset, limit);
+        mRecycler.setLoadingMore(true);
+        CallFreeZonePaymentRequest(offset, limit, queryFilter);
     }
 
-    private void CallFreeZonePaymentRequest(final int offset, final int limit) {
+    private void CallFreeZonePaymentRequest(final int offset, final int limit, final String queryFilter) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 Gson gson = new Gson();
                 user = gson.fromJson(new StoreData(getActivity().getApplicationContext()).getUserDataAsString(), User.class);
-                String soql = SoqlStatements.constructViewStatementQuery(user.get_contact().get_account().getID(), offset, limit);
+                String soql = SoqlStatements.constructViewStatementQuery(user.get_contact().get_account().getID(), offset, limit, queryFilter);
                 try {
                     restRequest = RestRequest.getRequestForQuery(getString(R.string.api_version), soql);
                     new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
@@ -199,10 +239,12 @@ public class ViewStatementFragment extends Fragment implements SwipeRefreshLayou
                                                     mAdapter = new ViewStatementAdapter(getActivity().getApplicationContext(), (ArrayList<FreeZonePayment>) SFResponseManager.parseFreeZonePaymentResponse(response.toString()));
                                                     mRecycler.setAdapter(mAdapter);
                                                 } else {
-                                                    boolean flag = mAdapter.addAll((ArrayList<FreeZonePayment>) SFResponseManager.parseFreeZonePaymentResponse(response.toString()));
-                                                    if (!flag) {
+                                                    ArrayList<FreeZonePayment> payments = (ArrayList<FreeZonePayment>) SFResponseManager.parseFreeZonePaymentResponse(response.toString());
+                                                    if (payments.size() == 0) {
                                                         mRecycler.setLoadingMore(false);
-//                                                        mRecycler.setupMoreListener(null, 0);
+                                                        mRecycler.setOnMoreListener(null);
+                                                    } else {
+                                                        mAdapter.addAll(payments);
                                                     }
                                                 }
                                             }

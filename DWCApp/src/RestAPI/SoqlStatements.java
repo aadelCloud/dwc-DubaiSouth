@@ -40,7 +40,7 @@ public class SoqlStatements {
             "Visa_Holder__r.Name, Visa_Holder__r.BillingCity FROM Visa__c WHERE " +
             "Sponsoring_Company__c = " + "\'" + "%s" + "\'" + "AND Visa_Validity_Status__c LIKE " + "\'" + "%s" + "\'" +
             "AND Visa_Type__c IN ('Employment', 'Transfer - External', 'Transfer - " +
-            "Internal') ORDER BY Visa_Expiry_Date__c";
+            "Internal') ORDER BY Visa_Expiry_Date__c LIMIT %s Offset %s";
 
 
     public static final String soql_get_access_card_page = "SELECT Id, Name, Personal_Photo__c, Card_Number__c, Status__c, " +
@@ -110,7 +110,11 @@ public class SoqlStatements {
 
     public static final String soql_get_record_type_company_documents = "SELECT ID FROM RecordType where DeveloperName = 'Company_Documents' AND SObjectType = 'Company_Documents__c'";
 
-    public static final String soql_view_statement = "SELECT Id, Name, CreatedDate, Transaction_Date__c, Paypal_Amount__c, Status__c, Payment_Type__c, Debit_Amount__c, Credit_Amount__c, Closing_Balance__C, Narrative__c, Effect_on_Account__c, Request__r.Employee_Ref__r.Name FROM Free_Zone_Payment__c WHERE Free_Zone_Customer__c = " + "\'" + "%s" + "\'" + " AND Effect_on_Account__c IN ('Credit', 'Debit')" + " LIMIT " + "%s" + " OFFSET " + "%s";
+    public static final String soql_view_statement = "SELECT Id, Name, CreatedDate, Transaction_Date__c, Paypal_Amount__c, Status__c, Payment_Type__c, Debit_Amount__c, Credit_Amount__c, Closing_Balance__C, Narrative__c, Effect_on_Account__c, Request__r.Employee_Ref__r.Name FROM Free_Zone_Payment__c WHERE Free_Zone_Customer__c = " + "\'" + "%s" + "\'" + " AND Effect_on_Account__c IN ('Credit', 'Debit') " + " %s " + " LIMIT " + "%s" + " OFFSET " + "%s";
+
+    public static final String soql_get_true_copies = "SELECT Id, Name, Template_Name_Link__c, Available_for_Preview__c, Original_can_be_Requested__c, eService_Administration__r.New_Edit_VF_Generator__c, eService_Administration__r.Redirect_Page__c, eService_Administration__r.Id, eService_Administration__r.Related_to_Object__c, eService_Administration__r.Display_Name__c, eService_Administration__r.Record_Type_Picklist__c, eService_Administration__r.Service_VF_Page__c FROM eServices_Document_Checklist__c WHERE eService_Administration__r.Related_to_Object__c = 'Registration' AND eService_Administration__r.RecordType.DeveloperName = 'Service_Request' AND eService_Administration__r.Is_Active__c = true AND eService_Administration__r.Sub_Category__c = 'Registration Services' ORDER BY Name LIMIT " + "%s" + " OFFSET " + "%s";
+
+    public static final String soql_get_customer_documents = "SELECT Id, Name, Customer_Document__c, Attachment_Id__c, Version__c, CreatedDate, Document_Type__c, Party__r.Id, Party__r.Name, RecordType.Id, RecordType.Name, RecordType.DeveloperName, RecordType.SObjectType, Original_Verified__c, Original_Collected__c, Required_Original__c, Verified_Scan_Copy__c, Uploaded__c, Required_Scan_copy__c FROM Company_Documents__C WHERE Company__c = " + "\'" + "%s" + "\'" + " ORDER BY CreatedDate LIMIT %s OFFSET %s";
 
     private static SoqlStatements instance = null;
 
@@ -164,10 +168,10 @@ public class SoqlStatements {
                     "Visa_Holder__r.Name, Visa_Holder__r.BillingCity FROM Visa__c WHERE " +
                     "Sponsoring_Company__c = " + "\'" + "%s" + "\'" +
                     "AND Visa_Type__c IN ('Employment', 'Transfer - External', 'Transfer - " +
-                    "Internal') ORDER BY Visa_Expiry_Date__c";
+                    "Internal') ORDER BY Visa_Expiry_Date__c Limit " + limit + " Offset " + offset;
             soqlFormat = String.format(soqlFormat, _user.get_contact().get_account().getID());
         } else {
-            soqlFormat = String.format(soql_get_permanent_employee_list_page, _user.get_contact().get_account().getID(), Visa_Validity_Status);
+            soqlFormat = String.format(soql_get_permanent_employee_list_page, _user.get_contact().get_account().getID(), Visa_Validity_Status, limit, offset);
         }
         return soqlFormat;
     }
@@ -301,8 +305,24 @@ public class SoqlStatements {
         return String.format(SQL, caseId);
     }
 
-    public static String constructViewStatementQuery(String id, int offset, int limit) {
-        String soql = String.format(soql_view_statement, id, limit, offset);
+    public static String constructViewStatementQuery(String id, int offset, int limit, String queryFilter) {
+        String soql = "";
+        if (queryFilter != null && !queryFilter.equals("")) {
+            soql = String.format(soql_view_statement, id, queryFilter, limit, offset);
+        } else {
+            soql = "SELECT Id, Name, CreatedDate, Transaction_Date__c, Paypal_Amount__c, Status__c, Payment_Type__c, Debit_Amount__c, Credit_Amount__c, Closing_Balance__C, Narrative__c, Effect_on_Account__c, Request__r.Employee_Ref__r.Name FROM Free_Zone_Payment__c WHERE Free_Zone_Customer__c = " + "\'" + "%s" + "\'" + " AND Effect_on_Account__c IN ('Credit', 'Debit') " + " LIMIT " + "%s" + " OFFSET " + "%s";
+            soql = String.format(soql, id, limit, offset);
+        }
+        return soql;
+    }
+
+    public static String constructTrueCopiesQuery(int offset, int limit) {
+        String soql = String.format(soql_get_true_copies, limit, offset);
+        return soql;
+    }
+
+    public static String constructCustomerDocumentsQuery(String accountId, int offset, int limit) {
+        String soql = String.format(soql_get_customer_documents, accountId, limit, offset);
         return soql;
     }
 }

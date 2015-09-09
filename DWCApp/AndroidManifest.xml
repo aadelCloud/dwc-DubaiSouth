@@ -121,12 +121,38 @@
             android:name="activity.ViewStatementShowDetails"
             android:label="@string/title_activity_main_noc"></activity>
 
-
-
+        <activity
+            android:name="fragmentActivity.ShareHolderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"></activity>
 
         <activity
             android:name="fragmentActivity.VisaActivity"
-            android:label="@string/title_activity_main_noc"></activity>
+            android:label="@string/title_activity_main_noc"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name="fragmentActivity.PreviewActivity"
+            android:label="@string/title_activity_main_noc"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name="fragmentActivity.RequestTrueCopyActivity"
+            android:label="@string/title_activity_main_noc"
+            android:screenOrientation="nosensor"></activity>
+
+        <activity
+            android:name="fragmentActivity.CustomerDocumentEditActivity"
+            android:label="@string/title_activity_main_noc"
+            android:screenOrientation="nosensor"></activity>
+
+
+        <activity
+            android:name="fragmentActivity.HomeCompanyDocumentsActivity"
+            android:label="@string/title_activity_main_noc"
+            android:screenOrientation="nosensor"></activity>
+
+
     </application>
 
 </manifest>

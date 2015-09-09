@@ -3,9 +3,10 @@ package utilities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 
 import com.google.gson.Gson;
+
+import java.util.ArrayList;
 
 import activity.CompanyDocumentsActivity;
 import activity.EmployeeListActivity;
@@ -16,14 +17,19 @@ import fragmentActivity.CardActivity;
 import fragmentActivity.ChangeAndRemovalActivity;
 import fragmentActivity.CompanyInfoActivity;
 import fragmentActivity.CompanyNOC.CompanyNocActivity;
+import fragmentActivity.CustomerDocumentEditActivity;
 import fragmentActivity.DashboardActivity;
+import fragmentActivity.HomeCompanyDocumentsActivity;
 import fragmentActivity.LeasingShowDetailsActivity;
 import fragmentActivity.MyRequestsActivity;
 import fragmentActivity.NOCScreen.NocActivity;
 import fragmentActivity.NameReservationActivity;
 import fragmentActivity.NeedHelpActivity;
 import fragmentActivity.NotificationsActivity;
+import fragmentActivity.PreviewActivity;
 import fragmentActivity.QuickAccessActivity;
+import fragmentActivity.RequestTrueCopyActivity;
+import fragmentActivity.ShareHolderActivity;
 import fragmentActivity.ShowDetailsActivity;
 import fragmentActivity.ThankYouActivity;
 import fragmentActivity.ViewStatementActivity;
@@ -33,7 +39,9 @@ import model.Card_Management__c;
 import model.Company_Documents__c;
 import model.Contract_DWC__c;
 import model.Directorship;
+import model.EServices_Document_Checklist__c;
 import model.FreeZonePayment;
+import model.ShareOwnership;
 import model.Visa;
 
 /**
@@ -92,6 +100,14 @@ public class ActivitiesLauncher {
 
     public static void openCompanyDocumentsActivity(Context applicationContext) {
         intent = new Intent(applicationContext, CompanyDocumentsActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        applicationContext.startActivity(intent);
+
+    }
+
+    public static void openHomeCompanyDocumentsActivity(Context applicationContext) {
+        intent = new Intent(applicationContext, HomeCompanyDocumentsActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         applicationContext.startActivity(intent);
@@ -176,7 +192,7 @@ public class ActivitiesLauncher {
     public static void openCardActivity(Context context, Card_Management__c card, String type) {
         intent = new Intent(context, CardActivity.class);
         intent.putExtra("type", type);
-        intent.putExtra("card",card);
+        intent.putExtra("card", card);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);
@@ -185,7 +201,7 @@ public class ActivitiesLauncher {
     public static void openVisaActivity(Context context, Visa visa, String renew) {
         intent = new Intent(context, VisaActivity.class);
         intent.putExtra("type", renew);
-        intent.putExtra("visa",visa);
+        intent.putExtra("visa", visa);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);
@@ -211,8 +227,8 @@ public class ActivitiesLauncher {
         intent = new Intent(context, ChangeAndRemovalActivity.class);
         if (object instanceof Directorship) {
             Directorship directorship = (Directorship) object;
-            Gson gson= new Gson();
-            intent.putExtra("object",gson.toJson(directorship));
+            Gson gson = new Gson();
+            intent.putExtra("object", gson.toJson(directorship));
         }
         intent.putExtra("MethodType", s);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -227,13 +243,54 @@ public class ActivitiesLauncher {
         context.startActivity(intent);
     }
 
-    public static void openViewStatementShowDetails(Context context,FreeZonePayment freeZonePayment) {
+    public static void openViewStatementShowDetails(Context context, FreeZonePayment freeZonePayment) {
         Gson gson = new Gson();
         String str = gson.toJson(freeZonePayment);
         intent = new Intent(context, ViewStatementShowDetails.class);
-        intent.putExtra("str",str);
+        intent.putExtra("str", str);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);
+    }
+
+    public static void openShareHolderActivity(Context context, ShareOwnership shareOwnership, String type, ArrayList<Object> objects) {
+        intent = new Intent(context, ShareHolderActivity.class);
+        intent.putExtra("type", "1");
+        intent.putExtra("share", shareOwnership);
+        intent.putExtra("shareHolders", objects);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
+    }
+
+    public static void openCompanyDocumentsRequestTrueCopyActivity(Context context, EServices_Document_Checklist__c eServices_document_checklist__c) {
+        Gson gson = new Gson();
+        String str = gson.toJson(eServices_document_checklist__c);
+        intent = new Intent(context, RequestTrueCopyActivity.class);
+        intent.putExtra("object", str);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
+    }
+
+    public static void openCustomerDocumentsEditActivity(Context context, Company_Documents__c company_documents__c) {
+        Gson gson = new Gson();
+        String str = gson.toJson(company_documents__c);
+        intent = new Intent(context, CustomerDocumentEditActivity.class);
+        intent.putExtra("object", str);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
+    }
+
+    public static void openCustomerDocumentsPreviewActivity(Context context, Object object) {
+        Gson gson = new Gson();
+        String str = gson.toJson(object);
+        intent = new Intent(context, PreviewActivity.class);
+        intent.putExtra("object", str);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        context.startActivity(intent);
+
     }
 }

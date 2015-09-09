@@ -1109,30 +1109,52 @@ public class SFResponseManager {
         try {
             jsonObject = new JSONObject(s.toString());
             JSONArray jArrayRecords = jsonObject.getJSONArray(JSONConstants.RECORDS);
-            for (int i = 0; i < jArrayRecords.length(); i++) {
-                JSONObject jsonObject1 = jArrayRecords.getJSONObject(i);
-                FreeZonePayment freeZonePayment = new FreeZonePayment();
-                freeZonePayment = gson.fromJson(jsonObject1.toString(), FreeZonePayment.class);
-                if (jsonObject1.getJSONObject("Request__r") != null) {
-                    if(jsonObject1.getJSONObject("Request__r").toString().contains("\"Employee_Ref__r\":null")){
-                        freeZonePayment.setEmployeeName("");
-                    }else{
-                        if (jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r") != null) {
-                            freeZonePayment.setEmployeeName(jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r").getString("Name"));
-                        } else {
+            if (jArrayRecords.length() > 0) {
+                for (int i = 0; i < jArrayRecords.length(); i++) {
+                    JSONObject jsonObject1 = jArrayRecords.getJSONObject(i);
+                    FreeZonePayment freeZonePayment = new FreeZonePayment();
+                    freeZonePayment = gson.fromJson(jsonObject1.toString(), FreeZonePayment.class);
+                    if (jsonObject1.getJSONObject("Request__r") != null) {
+                        if (jsonObject1.getJSONObject("Request__r").toString().contains("\"Employee_Ref__r\":null")) {
                             freeZonePayment.setEmployeeName("");
+                        } else {
+                            if (jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r") != null) {
+                                freeZonePayment.setEmployeeName(jsonObject1.getJSONObject("Request__r").getJSONObject("Employee_Ref__r").getString("Name"));
+                            } else {
+                                freeZonePayment.setEmployeeName("");
+                            }
                         }
+                    } else {
+                        freeZonePayment.setEmployeeName("");
                     }
-                } else {
-                    freeZonePayment.setEmployeeName("");
-                }
 
-                freeZonePayments.add(freeZonePayment);
+                    freeZonePayments.add(freeZonePayment);
+                }
+            } else {
+                freeZonePayments = new ArrayList<>();
             }
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         return freeZonePayments;
+    }
+
+    public static ArrayList<EServices_Document_Checklist__c> parseEServiceDocumentChecklist(String s) throws JSONException, IOException {
+        JSONObject jsonObject = new JSONObject(s.toString());
+        JSONArray jArrayRecords = jsonObject.getJSONArray(JSONConstants.RECORDS);
+        ArrayList<EServices_Document_Checklist__c> eServices_document_checklist__cs = new ArrayList<EServices_Document_Checklist__c>();
+        EServices_Document_Checklist__c eServices_document_checklist__c;
+        if (jArrayRecords.length() > 0) {
+            for (int i = 0; i < jArrayRecords.length(); i++) {
+                JSONObject jsonRecord = jArrayRecords.getJSONObject(i);
+                ObjectReader or = new ObjectMapper().reader().withType(
+                        EServices_Document_Checklist__c.class);
+                eServices_document_checklist__c = or.readValue(jsonRecord.toString());
+                eServices_document_checklist__cs.add(eServices_document_checklist__c);
+            }
+        }
+        return eServices_document_checklist__cs;
     }
 }

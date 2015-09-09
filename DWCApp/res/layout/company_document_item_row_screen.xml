@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <custom.expandableView.ExpandableLayoutItem
+        android:id="@+id/expandableLayoutItemTrueCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandable:el_headerLayout="@layout/company_document_item_row_activity"
+        expandable:el_contentLayout="@layout/view_content"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>
