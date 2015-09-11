@@ -2,6 +2,7 @@ package adapter.visasAdapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -81,10 +82,10 @@ public class PermanentEmployeeListAdapter extends ClickableListAdapter {
 
         Date VisaDate = null;
         try {
-            if(mo.getVisa_Expiry_Date__c()!=null){
+            if (mo.getVisa_Expiry_Date__c() != null) {
                 VisaDate = sdf.parse(mo.getVisa_Expiry_Date__c());
-            }else{
-                VisaDate=null;
+            } else {
+                VisaDate = null;
             }
 
         } catch (ParseException e) {
@@ -99,8 +100,8 @@ public class PermanentEmployeeListAdapter extends ClickableListAdapter {
                 _items.add(new ServiceItem("Cancel Visa", R.drawable.cancel_visa));
             }
 
-        } else if (VisaDate != null ) {
-            if(AutomaticUtilities.daysBetween(VisaDate, System.currentTimeMillis()) < 60){
+        } else if (VisaDate != null) {
+            if (AutomaticUtilities.daysBetween(VisaDate, System.currentTimeMillis()) < 60) {
                 _items.add(new ServiceItem("Renew Visa", R.drawable.renew_visa));
             }
         }
@@ -120,7 +121,22 @@ public class PermanentEmployeeListAdapter extends ClickableListAdapter {
             }
         });
 
-        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo, context, _items));
+        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo,act, context, _items));
+//        mvh._horizontalListView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent event) {
+//                switch (event.getAction()) {
+//                    case MotionEvent.ACTION_MOVE:
+//                        view.getParent().requestDisallowInterceptTouchEvent(true);
+//                        break;
+//                    case MotionEvent.ACTION_UP:
+//                    case MotionEvent.ACTION_CANCEL:
+//                        view.getParent().requestDisallowInterceptTouchEvent(false);
+//                        break;
+//                }
+//                return false;
+//            }
+//        });
     }
 
     static class VisaViewHolder extends ViewHolder {

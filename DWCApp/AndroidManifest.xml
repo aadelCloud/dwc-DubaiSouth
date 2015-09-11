@@ -141,11 +141,6 @@
             android:label="@string/title_activity_main_noc"
             android:screenOrientation="nosensor"></activity>
 
-        <activity
-            android:name="fragmentActivity.CustomerDocumentEditActivity"
-            android:label="@string/title_activity_main_noc"
-            android:screenOrientation="nosensor"></activity>
-
 
         <activity
             android:name="fragmentActivity.HomeCompanyDocumentsActivity"

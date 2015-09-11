@@ -25,14 +25,16 @@ import model.Visa;
  */
 public class FragmentListAdapter extends BaseAdapter {
 
+    private Activity activity;
     public ArrayList<Visa> _visas;
     Fragment _fragment;
     Context context;
 
-    public FragmentListAdapter(Context context, PermanentEmployeeFragment fragment, ArrayList<Visa> visas) {
+    public FragmentListAdapter(Activity act, Context context, PermanentEmployeeFragment fragment, ArrayList<Visa> visas) {
         this._fragment = fragment;
         this._visas = visas;
         this.context = context;
+        this.activity = act;
     }
 
     @Override
@@ -91,7 +93,7 @@ public class FragmentListAdapter extends BaseAdapter {
                     }
                 }
             });
-            _horizontalServices.setAdapter(new HorizontalListViewAdapter(_visas.get(position), context, _items));
+            _horizontalServices.setAdapter(new HorizontalListViewAdapter(_visas.get(position), activity, context, _items));
         }
         return convertView;
     }

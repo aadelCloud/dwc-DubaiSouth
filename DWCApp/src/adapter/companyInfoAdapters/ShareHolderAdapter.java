@@ -91,7 +91,7 @@ public class ShareHolderAdapter extends ClickableListAdapter {
         ArrayList<ServiceItem> _items = new ArrayList<ServiceItem>();
         _items.add(new ServiceItem("Share Holder", R.drawable.renew_visa, objects));
         _items.add(new ServiceItem("Show Details", R.drawable.service_show_details));
-        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_ShareHolder, context, _items));
+        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_ShareHolder,activity, context, _items));
 
     }
 

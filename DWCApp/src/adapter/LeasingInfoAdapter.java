@@ -88,7 +88,7 @@ public class LeasingInfoAdapter extends ClickableListAdapter {
             }
         });
 
-        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo, context, _items));
+        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo,act, context, _items));
     }
 
 

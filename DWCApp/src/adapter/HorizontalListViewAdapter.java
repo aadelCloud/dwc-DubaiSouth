@@ -2,6 +2,8 @@ package adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,11 +11,14 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.cocosw.bottomsheet.BottomSheet;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
+import activity.CompanyDocumentsActivity;
 import cloudconcept.dwc.R;
+import dataStorage.StoreData;
 import model.Card_Management__c;
 import model.Company_Documents__c;
 import model.EServices_Document_Checklist__c;
@@ -27,17 +32,35 @@ import utilities.ActivitiesLauncher;
  */
 public class HorizontalListViewAdapter extends BaseAdapter {
 
+    private Activity activity;
     Object object;
     Gson gson;
     String objectAsString = "";
     private Context context;
     private ArrayList<ServiceItem> _items;
+    private static int RESULT_LOAD_IMG_FROM_GALLERY = 2;
+    private static int RESULT_LOAD_IMG_FROM_CAMERA = 3;
 
-    public HorizontalListViewAdapter(Object object, Context context, ArrayList<ServiceItem> _items) {
+    public boolean isInflated() {
+        return inflated;
+    }
+
+    private boolean inflated;
+
+    public HorizontalListViewAdapter(Object object, Activity activity, Context context, ArrayList<ServiceItem> _items) {
         this._items = _items;
         this.context = context;
         this.object = object;
-        gson = new Gson();
+        inflated = false;
+        this.activity = activity;
+    }
+
+    public ArrayList<ServiceItem> getServiceItems() {
+        return this._items;
+    }
+
+    public Object getObject() {
+        return this.object;
     }
 
 
@@ -77,6 +100,7 @@ public class HorizontalListViewAdapter extends BaseAdapter {
             public void onClick(View v) {
                 if (object instanceof Visa) {
                     Visa _visa = (Visa) object;
+                    gson = new Gson();
                     objectAsString = gson.toJson(_visa);
                     if (tvServiceName.getText().toString().equals("Show Details")) {
                         ActivitiesLauncher.openShowDetailsActivity(context, "Visa Details", objectAsString, "Visa");
@@ -111,16 +135,53 @@ public class HorizontalListViewAdapter extends BaseAdapter {
                         ActivitiesLauncher.openCompanyDocumentsRequestTrueCopyActivity(context, eServices_document_checklist__c);
                     }
                 } else if (object instanceof Company_Documents__c) {
-                    Company_Documents__c company_documents__c = (Company_Documents__c) object;
+                    final Company_Documents__c company_documents__c = (Company_Documents__c) object;
                     if (tvServiceName.getText().toString().equals("Preview")) {
                         ActivitiesLauncher.openCustomerDocumentsPreviewActivity(context, company_documents__c);
                     } else if (tvServiceName.getText().toString().equals("Edit")) {
-                        ActivitiesLauncher.openCustomerDocumentsEditActivity(context, company_documents__c);
+                        new BottomSheet.Builder(activity).title("Choose Edit Option").sheet(R.menu.customer_document_list).listener(new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which) {
+                                    case R.id.camera:
+                                        loadImagefromCamera(position, company_documents__c);
+                                        break;
+                                    case R.id.gallery:
+                                        loadImagefromGallery(position, company_documents__c);
+                                        break;
+                                }
+                            }
+                        }).show();
                     }
                 }
             }
         });
 
         return convertView;
+    }
+
+    public void loadImagefromGallery(int position, Company_Documents__c company_documents__c) {
+        Intent galleryIntent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        gson = new Gson();
+        new StoreData(context).setCompanyDocumentObject(gson.toJson(company_documents__c));
+        new StoreData(context).setCompanyDocumentPosition(position);
+        activity.startActivityForResult(galleryIntent, RESULT_LOAD_IMG_FROM_GALLERY);
+    }
+
+    public void loadImagefromCamera(int position, Company_Documents__c company_documents__c) {
+        Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        gson = new Gson();
+        new StoreData(context).setCompanyDocumentObject(gson.toJson(company_documents__c));
+        new StoreData(context).setCompanyDocumentPosition(position);
+        activity.startActivityForResult(cameraIntent, RESULT_LOAD_IMG_FROM_CAMERA);
+    }
+
+    public void setInflated(boolean b) {
+        this.inflated = b;
+    }
+
+    public boolean getInflated() {
+        return this.inflated;
     }
 }

@@ -153,7 +153,7 @@ public class LicenseInfoFragment extends Fragment {
             _views.add(new DWCView("License Renewal", ItemType.HORIZONTAL_LIST_VIEW));
         }
 
-        View viewItems = Utilities.drawViewsOnLayout(_user, getActivity().getApplicationContext(), _views);
+        View viewItems = Utilities.drawViewsOnLayout(getActivity(), _user, getActivity().getApplicationContext(), _views);
         linearLayout.removeAllViews();
         linearLayout.addView(viewItems);
     }

@@ -17,7 +17,6 @@ import fragmentActivity.CardActivity;
 import fragmentActivity.ChangeAndRemovalActivity;
 import fragmentActivity.CompanyInfoActivity;
 import fragmentActivity.CompanyNOC.CompanyNocActivity;
-import fragmentActivity.CustomerDocumentEditActivity;
 import fragmentActivity.DashboardActivity;
 import fragmentActivity.HomeCompanyDocumentsActivity;
 import fragmentActivity.LeasingShowDetailsActivity;
@@ -273,21 +272,27 @@ public class ActivitiesLauncher {
         context.startActivity(intent);
     }
 
-    public static void openCustomerDocumentsEditActivity(Context context, Company_Documents__c company_documents__c) {
-        Gson gson = new Gson();
-        String str = gson.toJson(company_documents__c);
-        intent = new Intent(context, CustomerDocumentEditActivity.class);
-        intent.putExtra("object", str);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        context.startActivity(intent);
-    }
+//    public static void openCustomerDocumentsEditActivity(Context context, Company_Documents__c company_documents__c) {
+//        Gson gson = new Gson();
+//        String str = gson.toJson(company_documents__c);
+//        intent = new Intent(context, CustomerDocumentEditActivity.class);
+//        intent.putExtra("object", str);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        context.startActivity(intent);
+//    }
 
     public static void openCustomerDocumentsPreviewActivity(Context context, Object object) {
         Gson gson = new Gson();
         String str = gson.toJson(object);
         intent = new Intent(context, PreviewActivity.class);
         intent.putExtra("object", str);
+        if(object instanceof Company_Documents__c){
+            intent.putExtra("type", "Company_Documents__c");
+        }else{
+            intent.putExtra("type", "EServices_Document_Checklist__c");
+        }
+
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         context.startActivity(intent);

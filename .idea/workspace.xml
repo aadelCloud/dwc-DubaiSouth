@@ -12,6 +12,11 @@
           <theme>@style/AppTheme2</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/base.xml">
+        <config>
+          <theme>@style/AppTheme2</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/DWCApp/res/layout/homepage.xml">
         <config>
           <theme>@style/AppTheme2</theme>
@@ -48,95 +53,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeCompanyDocumentsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/HomeCompanyDocumentsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding>
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyDocumentsInnerFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CompanyDocumentsInnerFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="80" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2963#6383#0" expanded="true" />
-                <element signature="e#3606#6239#0" expanded="true" />
-                <element signature="e#4298#5841#0" expanded="true" />
-                <element signature="e#5840#5841#0" expanded="true" />
-                <element signature="e#6238#6239#0" expanded="true" />
-                <element signature="e#6382#6383#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SFResponseManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="820" column="50" selection-start-line="820" selection-start-column="50" selection-end-line="820" selection-end-column="50" />
-              <folding>
-                <element signature="e#57869#57902#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TrueCopiesAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+              <folding>
+                <element signature="e#1963#2325#0" expanded="true" />
+                <element signature="e#2324#2325#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1839#2201#0" expanded="true" />
-                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2166#3313#0" expanded="true" />
+                <element signature="e#2677#2905#0" expanded="true" />
+                <element signature="e#2904#2905#0" expanded="true" />
+                <element signature="e#3312#3313#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDocumentsAdapter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/CustomerDocumentsAdapter.java">
+      <file leaf-file-name="DashboardActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/DashboardActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49275362">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-              <folding>
-                <element signature="e#1659#1672#0" expanded="true" />
-                <element signature="e#2095#2457#0" expanded="true" />
-                <element signature="e#2456#2457#0" expanded="true" />
-                <element signature="e#2521#2522#0" expanded="true" />
-                <element signature="e#2552#2553#0" expanded="true" />
-                <element signature="e#2599#2600#0" expanded="true" />
-                <element signature="e#2633#2634#0" expanded="true" />
-                <element signature="e#2685#2686#0" expanded="true" />
-                <element signature="e#2728#2729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="company_document_item_row_screen.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/company_document_item_row_screen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.066667">
-              <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/DashboardFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="20" selection-start-line="38" selection-start-column="6" selection-end-line="70" selection-end-column="20" />
+              <folding>
+                <element signature="e#2030#2242#0" expanded="true" />
+                <element signature="e#2241#2242#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EServices_Document_Checklist__c.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/model/EServices_Document_Checklist__c.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.9473686">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoqlStatements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="16.024391">
+              <caret line="108" column="267" selection-start-line="108" selection-start-column="247" selection-end-line="108" selection-end-column="267" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.245614">
+              <caret line="180" column="54" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
+              <folding>
+                <element signature="e#6407#6415#0" expanded="true" />
+                <element signature="e#6588#6662#0" expanded="true" />
+                <element signature="e#6936#8801#0" expanded="true" />
+                <element signature="e#8800#8801#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificatesAndAgreementsFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CertificatesAndAgreementsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28809524">
+              <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+              <folding>
+                <element signature="e#4365#7598#0" expanded="true" />
+                <element signature="e#7597#7598#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NOCAttachmentPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/NOCAttachmentPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="159" column="19" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
+              <folding>
+                <element signature="e#12488#14151#0" expanded="true" />
+                <element signature="e#14150#14151#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -145,9 +171,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="resourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -5982,58 +6008,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/emptyview.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_more_progress.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/drawable/item_selector.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/ViewStatementActivity.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_statement_item_row.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/ViewStatementAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/model/FreeZonePayment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/activity/ViewStatementShowDetails.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/show_details_view_statement.xml" />
-        <option value="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_content_shareholder.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/shareholder_item.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/ChangeAndRemovalServiceFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/model/ShareOwnership.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/ShareHolderAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/companyInfoAdapters/ShareHolderAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/ShareholdersFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/model/Shareholder.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java" />
-        <option value="$PROJECT_DIR$/DWCApp/res/layout/view_statement.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/HomepageActivity.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/model/EServices_Document_Checklist__c.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/utilities/RequestTrueCopyActivity.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/RequestTrueCopyActivity.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/PreviewActivity.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/model/Receipt_Template__c.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/custom/DrawView.java" />
         <option value="$PROJECT_DIR$/DWCApp/res/layout/true_copies_item_row.xml" />
         <option value="$PROJECT_DIR$/DWCApp/res/layout/view_header_true_copies.xml" />
         <option value="$PROJECT_DIR$/DWCApp/res/layout/true_copies.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java" />
         <option value="$PROJECT_DIR$/DWCApp/res/layout/view_content.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/CompanyDocumentsFragment.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/HomeCompanyDocumentsActivity.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/model/Company_Documents__c.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/adapter/CustomDocumentsAdapter.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java" />
         <option value="$PROJECT_DIR$/DWCApp/res/layout/company_document_item_row_screen.xml" />
         <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/CustomerDocumentEditActivity.java" />
         <option value="$PROJECT_DIR$/DWCApp/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" />
-        <option value="$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CompanyDocumentsInnerFragment.java" />
+        <option value="$PROJECT_DIR$/library/src/main/res/layout/mdl_fragment_view_pager.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/NeedHelpFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/custom/WScrollView.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/custom/CustomViewPager.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/custom/HorizontalListView.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CustomerDocumentsInnerFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/PreviewFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/preview.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/menu/customer_document_list.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java" />
         <option value="$PROJECT_DIR$/DWCApp/src/adapter/CustomerDocumentsAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/DWCExpandableListAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/FragmentListAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/LeasingInfoAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/companyInfoAdapters/ShareHolderAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/AccessCardAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/MyVisitVisaAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/companyInfoAdapters/DirectorsAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/CompanyInfoInnerFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/LicenseInfoFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/ShowDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/PreviewActivity.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragmentActivity/HomeCompanyDocumentsActivity.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/CompanyDocumentsFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CustomerDocumentsFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CertificatesAndAgreementsFragment.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java" />
+        <option value="$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java" />
+        <option value="$PROJECT_DIR$/DWCApp/res/layout/preview_web_view.xml" />
+        <option value="$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -6068,7 +6101,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -6122,24 +6155,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dwc-DubaiSouth" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DWCApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -6158,14 +6173,32 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
+              <option name="myItemId" value="fragmentActivity" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dwc-DubaiSouth" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DWCApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestAPI" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -6181,8 +6214,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\res\layout" />
       <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\src\fragment" />
+      <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\res\layout" />
       <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\src\adapter" />
       <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\src\fragment\Visa\RenewPassport" />
       <recent name="C:\Users\Abanoub Wagdy\Documents\GitHub\dwc-DubaiSouth\DWCApp\src\model" />
@@ -6399,27 +6432,27 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2506427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945207" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4020548" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10684931" sideWeight="0.49485862" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10684931" sideWeight="0.5051414" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22739726" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11917808" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22739726" sideWeight="0.4974293" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04452055" sideWeight="0.4922879" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20661953" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2041096" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2041096" sideWeight="0.49357328" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -6492,14 +6525,14 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java</url>
-          <line>92</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CertificatesAndAgreementsFragment.java</url>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CertificatesAndAgreementsFragment.java</url>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -6547,7 +6580,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java</url>
-          <line>66</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -6571,283 +6604,149 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java</url>
-          <line>132</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java</url>
-          <line>40</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java</url>
-          <line>60</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CompanyDocumentsInnerFragment.java</url>
-          <line>93</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java</url>
+          <line>100</line>
           <properties />
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java</url>
+          <line>285</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="54" />
+      <option name="time" value="74" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Android/sdk/sources/android-22/android/widget/AdapterView.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/ServiceItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3222315">
-          <caret line="955" column="0" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/exceptionHandling/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/homepage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="552" column="28" selection-start-line="552" selection-start-column="28" selection-end-line="552" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/HomepageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30984643">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1-sources.jar!/android/support/v4/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="1788" column="0" selection-start-line="1788" selection-start-column="0" selection-end-line="1788" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/NeedHelpFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35772356">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/need_help.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5282486">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Cards/NOCAttachmentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.140351">
-          <caret line="108" column="84" selection-start-line="108" selection-start-column="84" selection-end-line="108" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/ViewStatementFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-51.877193">
-          <caret line="247" column="53" selection-start-line="241" selection-start-column="51" selection-end-line="247" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_content_permanent_employee.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_content_shareholder.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_expandable.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_statement.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31544256">
-          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.36325148">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="e#545#580#0" expanded="false" />
+            <element signature="e#209#210#0" expanded="false" />
+            <element signature="e#239#240#0" expanded="false" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/WScrollView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96203625">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#372#373#0" expanded="false" />
+            <element signature="e#402#403#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/visas_cards_access__cards.xml">
+    <entry file="jar://D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1-sources.jar!/android/support/v4/view/ViewCompat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33276883">
+          <caret line="1527" column="26" selection-start-line="1527" selection-start-column="26" selection-end-line="1527" selection-end-column="26" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/item_row_permanent_employee.xml">
+    <entry file="jar://D:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.2.1/support-v4-22.2.1-sources.jar!/android/support/v4/view/ViewPager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4039548">
-          <caret line="13" column="58" selection-start-line="7" selection-start-column="3" selection-end-line="13" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.8103448">
+          <caret line="574" column="16" selection-start-line="574" selection-start-column="16" selection-end-line="574" selection-end-column="16" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/DWCViewPagerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="135" column="36" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-22/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33276883">
+          <caret line="4897" column="16" selection-start-line="4897" selection-start-column="16" selection-end-line="4897" selection-end-column="16" />
+          <folding>
+            <element signature="e#188584#188585#0" expanded="false" />
+            <element signature="e#188638#188639#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/visasAndCards/PermanentEmployeeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="204" column="73" selection-start-line="204" selection-start-column="73" selection-end-line="204" selection-end-column="73" />
+          <caret line="51" column="108" selection-start-line="51" selection-start-column="108" selection-end-line="51" selection-end-column="121" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NocActivity.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/CustomViewPager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11924119">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/VisasAndCardsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07588076">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/PreviewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41734418">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/ViewStatementAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="3" selection-start-line="158" selection-start-column="3" selection-end-line="161" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/RequestTrueCopyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state vertical-scroll-proportion="-4.9565215">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/MyRequestsAdapter.java">
+    <entry file="file://D:/Android/sdk/sources/android-22/com/android/internal/os/ZygoteInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5165441">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.7882353">
+          <caret line="917" column="0" selection-start-line="917" selection-start-column="0" selection-end-line="917" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/ClickableListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/preview.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-          <folding>
-            <element signature="e#1938#1939#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/DrawView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5118367">
-          <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build/intermediates/exploded-aar/com.malinskiy/superrecyclerview/1.1.1/res/layout/layout_recyclerview_verticalscroll.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14442013">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -6855,134 +6754,354 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://D:/Android/sdk/sources/android-22/android/view/ViewStub.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <caret line="134" column="53" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/Receipt_Template__c.java">
+    <entry file="file://D:/Android/sdk/sources/android-22/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3463936">
-          <caret line="244" column="37" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2289" column="0" selection-start-line="2289" selection-start-column="0" selection-end-line="2289" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/EServices_Document_Checklist__c.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/menu/list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64648265">
-          <caret line="177" column="23" selection-start-line="177" selection-start-column="23" selection-end-line="177" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.11046025">
+          <caret line="4" column="61" selection-start-line="2" selection-start-column="2" selection-end-line="4" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/build/intermediates/exploded-aar/com.malinskiy/superrecyclerview/1.1.1/classes.jar!/com/malinskiy/superrecyclerview/SuperRecyclerView.class">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/menu/customer_document_list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33274958">
-          <caret line="190" column="193" selection-start-line="190" selection-start-column="180" selection-end-line="190" selection-end-column="193" />
+        <state vertical-scroll-proportion="0.027615063">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-22/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3330544">
+          <caret line="668" column="28" selection-start-line="668" selection-start-column="28" selection-end-line="668" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CompanyNOC/CompanyNocActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="5" selection-start-line="82" selection-start-column="3" selection-end-line="120" selection-end-column="5" />
           <folding>
-            <element signature="e#17181#17182#0" expanded="true" />
-            <element signature="e#17231#17232#0" expanded="true" />
+            <element signature="e#2868#2899#0" expanded="false" />
+            <element signature="e#5430#5461#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/DWCExpandableListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="103" selection-start-line="129" selection-start-column="103" selection-end-line="129" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/FragmentListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="104" selection-start-line="95" selection-start-column="104" selection-end-line="95" selection-end-column="104" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/PermanentEmployeeListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="56" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+          <caret line="123" column="80" selection-start-line="123" selection-start-column="80" selection-end-line="123" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2844#2857#0" expanded="true" />
+            <element signature="e#2877#2890#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_header_true_copies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36386767">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/view_content.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13994911">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/true_copies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7456213">
-          <caret line="323" column="63" selection-start-line="323" selection-start-column="63" selection-end-line="323" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/Company_Documents__c.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33304796">
-          <caret line="174" column="41" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/CompanyDocumentsFragment.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/LeasingInfoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <caret line="90" column="80" selection-start-line="90" selection-start-column="80" selection-end-line="90" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/companyInfoAdapters/ShareHolderAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="98" selection-start-line="93" selection-start-column="98" selection-end-line="93" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/AccessCardAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="96" selection-start-line="102" selection-start-column="96" selection-end-line="102" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/visasAdapters/MyVisitVisaAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/companyInfoAdapters/DirectorsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="99" selection-start-line="90" selection-start-column="99" selection-end-line="90" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/CompanyInfoInnerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="67" selection-start-line="90" selection-start-column="67" selection-end-line="90" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/ShowDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="57" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/drawable-hdpi/header_slide_menu_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/base.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36296976">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyInfo/LicenseInfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="63" selection-start-line="141" selection-start-column="63" selection-end-line="141" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/cloudconcept/dwc/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/HomeCompanyDocumentsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state vertical-scroll-proportion="-7.736842">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
           <folding>
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#5668#5699#0" expanded="true" />
+            <element signature="e#5958#7625#0" expanded="true" />
+            <element signature="e#7624#7625#0" expanded="true" />
+            <element signature="e#7885#7901#0" expanded="true" />
+            <element signature="e#8061#8092#0" expanded="true" />
+            <element signature="e#8387#10067#0" expanded="true" />
+            <element signature="e#10066#10067#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/TrueCopiesFragment.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/CompanyDocumentsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1583674">
-          <caret line="122" column="53" selection-start-line="122" selection-start-column="53" selection-end-line="122" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/true_copies_item_row.xml">
+    <entry file="file://D:/Android/sdk/sources/android-22/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39152542">
-          <caret line="14" column="58" selection-start-line="8" selection-start-column="3" selection-end-line="14" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="142" column="26" selection-start-line="142" selection-start-column="26" selection-end-line="142" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/CustomerDocumentsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36104113">
+          <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CustomerDocumentsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="76" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3039#6799#0" expanded="true" />
+            <element signature="e#3386#3417#0" expanded="true" />
+            <element signature="e#4534#6257#0" expanded="true" />
+            <element signature="e#6256#6257#0" expanded="true" />
+            <element signature="e#6798#6799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="62" selection-start-line="132" selection-start-column="62" selection-end-line="132" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="287" column="45" selection-start-line="287" selection-start-column="45" selection-end-line="287" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/NOCScreen/NOCAttachmentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33753148">
+          <caret line="170" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding>
+            <element signature="e#7594#7625#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/custom/HorizontalListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1390" column="55" selection-start-line="1390" selection-start-column="55" selection-end-line="1390" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/PreviewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.245614">
+          <caret line="180" column="54" selection-start-line="180" selection-start-column="54" selection-end-line="180" selection-end-column="54" />
+          <folding>
+            <element signature="e#6407#6415#0" expanded="true" />
+            <element signature="e#6588#6662#0" expanded="true" />
+            <element signature="e#6936#8801#0" expanded="true" />
+            <element signature="e#8800#8801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="67" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+          <folding>
+            <element signature="e#1963#2325#0" expanded="true" />
+            <element signature="e#2324#2325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/Visa/NOCAttachmentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="19" selection-start-line="159" selection-start-column="19" selection-end-line="159" selection-end-column="19" />
+          <folding>
+            <element signature="e#12488#14151#0" expanded="true" />
+            <element signature="e#14150#14151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/model/EServices_Document_Checklist__c.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.9473686">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SoqlStatements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="16.024391">
+          <caret line="108" column="267" selection-start-line="108" selection-start-column="247" selection-end-line="108" selection-end-column="267" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/DashboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/DashboardFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="20" selection-start-line="38" selection-start-column="6" selection-end-line="70" selection-end-column="20" />
+          <folding>
+            <element signature="e#2030#2242#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/preview_web_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17225951">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -6990,103 +7109,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/CompanyDocumentsActivityAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75510204">
-          <caret line="62" column="98" selection-start-line="60" selection-start-column="6" selection-end-line="62" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragmentActivity/CustomerDocumentEditActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18857142">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27265307">
-          <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
-          <folding>
-            <element signature="e#948#966#0" expanded="true" />
-            <element signature="e#1228#1246#0" expanded="true" />
-            <element signature="e#1561#1579#0" expanded="true" />
-            <element signature="e#1737#1755#0" expanded="true" />
-            <element signature="e#1914#1932#0" expanded="true" />
-            <element signature="e#2092#2110#0" expanded="true" />
-            <element signature="e#2268#2286#0" expanded="true" />
-            <element signature="e#2447#2465#0" expanded="true" />
-            <element signature="e#2614#2632#0" expanded="true" />
-            <element signature="e#2795#2813#0" expanded="true" />
-            <element signature="e#3028#3046#0" expanded="true" />
-            <element signature="e#3207#3225#0" expanded="true" />
-            <element signature="e#3386#3404#0" expanded="true" />
-            <element signature="e#3562#3580#0" expanded="true" />
-            <element signature="e#3734#3752#0" expanded="true" />
-            <element signature="e#3915#3948#0" expanded="true" />
-            <element signature="e#4079#4112#0" expanded="true" />
-            <element signature="e#4226#4259#0" expanded="true" />
-            <element signature="e#4388#4421#0" expanded="true" />
-            <element signature="e#4547#4580#0" expanded="true" />
-            <element signature="e#4707#4740#0" expanded="true" />
-            <element signature="e#4864#4897#0" expanded="true" />
-            <element signature="e#5016#5049#0" expanded="true" />
-            <element signature="e#5171#5189#0" expanded="true" />
-            <element signature="e#5353#5386#0" expanded="true" />
-            <element signature="e#5553#5586#0" expanded="true" />
-            <element signature="e#5761#5794#0" expanded="true" />
-            <element signature="e#5974#6007#0" expanded="true" />
-            <element signature="e#6188#6221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/utilities/ActivitiesLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5420408">
-          <caret line="285" column="23" selection-start-line="285" selection-start-column="23" selection-end-line="285" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/HorizontalListViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59591836">
-          <caret line="116" column="83" selection-start-line="116" selection-start-column="83" selection-end-line="116" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/RestAPI/SFResponseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="820" column="50" selection-start-line="820" selection-start-column="50" selection-end-line="820" selection-end-column="50" />
-          <folding>
-            <element signature="e#57869#57902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CompanyDocumentsInnerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="80" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2963#6383#0" expanded="true" />
-            <element signature="e#3606#6239#0" expanded="true" />
-            <element signature="e#4298#5841#0" expanded="true" />
-            <element signature="e#5840#5841#0" expanded="true" />
-            <element signature="e#6238#6239#0" expanded="true" />
-            <element signature="e#6382#6383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/company_document_item_row.xml">
+    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/dashboard.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -7097,54 +7120,27 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/TrueCopiesAdapter.java">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/PreviewFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1839#2201#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2166#3313#0" expanded="true" />
+            <element signature="e#2677#2905#0" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+            <element signature="e#3312#3313#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/company_document_item_row_activity.xml">
+    <entry file="file://$PROJECT_DIR$/DWCApp/src/fragment/companyDocumentsScreen/CertificatesAndAgreementsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21751413">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/res/layout/company_document_item_row_screen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.066667">
-          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DWCApp/src/adapter/CustomerDocumentsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49275362">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.28809524">
+          <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
           <folding>
-            <element signature="e#1659#1672#0" expanded="true" />
-            <element signature="e#2095#2457#0" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2521#2522#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2633#2634#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2728#2729#0" expanded="true" />
+            <element signature="e#4365#7598#0" expanded="true" />
+            <element signature="e#7597#7598#0" expanded="true" />
           </folding>
         </state>
       </provider>

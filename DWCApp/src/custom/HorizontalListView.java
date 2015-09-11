@@ -1287,7 +1287,7 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
      * Call to set the new scroll state.
      * If it has changed and a listener is registered then it will be notified.
      */
-    private void setCurrentScrollState(OnScrollStateChangedListener.ScrollState newScrollState) {
+    public void setCurrentScrollState(OnScrollStateChangedListener.ScrollState newScrollState) {
         // If the state actually changed then notify listener if there is one
         if (mCurrentScrollState != newScrollState && mOnScrollStateChangedListener != null) {
             mOnScrollStateChangedListener.onScrollStateChanged(newScrollState);
@@ -1385,4 +1385,24 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
             return scroller.getCurrVelocity();
         }
     }
+
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        boolean handled = super.dispatchTouchEvent(ev);
+        handled |= mGestureDetector.onTouchEvent(ev); //this is always true during scrolling
+        return handled; //returning true will stop the listview functions to scroll it
+    }
+
+//    @Override
+//    public boolean onScroll(MotionEvent e1, MotionEvent e2,
+//                            float distanceX, float distanceY) {
+//
+//        synchronized(HorizontalListView.this){
+//            mNextX += (int)distanceX;
+//        }
+//        requestLayout();
+//
+//        return true;
+//    }
 }

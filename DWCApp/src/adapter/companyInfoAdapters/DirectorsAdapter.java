@@ -88,7 +88,7 @@ public class DirectorsAdapter extends ClickableListAdapter {
             }
         });
         Utilities.setUserPhoto(activity, Utilities.stringNotNull(_directorship.get_director().getPersonal_Photo()), holder._smartEmployeeImage);
-        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_directorship, context, _items));
+        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_directorship,activity, context, _items));
     }
 
     static class DirectorViewHolder extends ViewHolder {

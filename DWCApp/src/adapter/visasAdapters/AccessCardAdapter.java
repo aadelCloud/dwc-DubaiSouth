@@ -100,7 +100,7 @@ public class AccessCardAdapter extends ClickableListAdapter {
             }
         });
 
-        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_cardManagement, context, _items));
+        holder._horizontalListView.setAdapter(new HorizontalListViewAdapter(_cardManagement,act, context, _items));
     }
 
     static class AccessCardViewHolder extends ViewHolder {

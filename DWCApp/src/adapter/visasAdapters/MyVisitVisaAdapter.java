@@ -87,7 +87,7 @@ public class MyVisitVisaAdapter extends ClickableListAdapter {
                 }
             }
         });
-        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo, context, _items));
+        mvh._horizontalListView.setAdapter(new HorizontalListViewAdapter(mo,activity, context, _items));
     }
 
     static class VisitVisaViewHolder extends ViewHolder {

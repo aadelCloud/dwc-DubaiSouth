@@ -1170,7 +1170,7 @@ public class Utilities {
         return diffDays;
     }
 
-    public static View drawViewsOnLayout(Object object, Context applicationContext, ArrayList<DWCView> _views) {
+    public static View drawViewsOnLayout(Activity activity, Object object, Context applicationContext, ArrayList<DWCView> _views) {
 
         LayoutInflater inflater = (LayoutInflater)
                 applicationContext.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
@@ -1273,7 +1273,7 @@ public class Utilities {
                         params.leftMargin = 5;
                         params.bottomMargin = 10;
                         viewHeader.setLayoutParams(params);
-                        hlvServices.setAdapter(new HorizontalListViewAdapter(object, applicationContext, _items));
+                        hlvServices.setAdapter(new HorizontalListViewAdapter(object, activity, applicationContext, _items));
 //                        hlvServices.requestFocus();
 //                        hlvServices.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 //                            @Override

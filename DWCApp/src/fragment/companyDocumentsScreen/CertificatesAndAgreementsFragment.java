@@ -19,29 +19,35 @@ import com.salesforce.androidsdk.rest.ClientManager;
 import com.salesforce.androidsdk.rest.RestClient;
 import com.salesforce.androidsdk.rest.RestRequest;
 import com.salesforce.androidsdk.rest.RestResponse;
+
+import org.json.JSONException;
+
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+
 import RestAPI.SFResponseManager;
 import RestAPI.SoqlStatements;
-import adapter.CustomerDocumentsAdapter;
+import adapter.TrueCopiesAdapter;
 import cloudconcept.dwc.R;
 import fragmentActivity.HomeCompanyDocumentsActivity;
-import model.Company_Documents__c;
+import model.EServices_Document_Checklist__c;
 import utilities.Utilities;
 
 /**
  * Created by Abanoub Wagdy on 9/8/2015.
  */
-public class CompanyDocumentsInnerFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, OnMoreListener {
+public class CertificatesAndAgreementsFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, OnMoreListener {
 
-    private static final String ARG_TEXT = "CompanyDocuments";
-    private Handler mHandler;
+    private static final String ARG_TEXT = "TrueCopies";
+    SuperRecyclerView recyclerView;
     private HomeCompanyDocumentsActivity activity;
-    private SuperRecyclerView recyclerView;
-    private int offset = 0;
-    private int limit = 10;
+    private TrueCopiesAdapter mAdapter;
+    int offset = 0;
+    int limit = 10;
     private RestRequest restRequest;
-    CustomerDocumentsAdapter mAdapter;
+    private Handler mHandler;
+    private ArrayList<EServices_Document_Checklist__c> eServiceDocumentChecklists;
 
     @Nullable
     @Override
@@ -63,20 +69,21 @@ public class CompanyDocumentsInnerFragment extends Fragment implements SwipeRefr
         recyclerView.setupMoreListener(this, 20);
     }
 
-    public static CompanyDocumentsInnerFragment newInstance(String text) {
-        CompanyDocumentsInnerFragment fragment = new CompanyDocumentsInnerFragment();
+    public static CertificatesAndAgreementsFragment newInstance(String text) {
+        CertificatesAndAgreementsFragment fragment = new CertificatesAndAgreementsFragment();
         Bundle bundle = new Bundle();
         bundle.putString(ARG_TEXT, text);
         fragment.setArguments(bundle);
         return fragment;
     }
 
-    private void CallCustomerDocumentsService(final int offset, final int limit) {
+    private void CallTrueCopiesService(final int offset, final int limit) {
+
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 Gson gson = new Gson();
-                String soql = SoqlStatements.constructCustomerDocumentsQuery(activity.getUser().get_contact().get_account().getID(), offset, limit);
+                String soql = SoqlStatements.constructTrueCopiesQuery(offset, limit);
                 try {
                     restRequest = RestRequest.getRequestForQuery(getString(R.string.api_version), soql);
                     new ClientManager(getActivity(), SalesforceSDKManager.getInstance().getAccountType(), SalesforceSDKManager.getInstance().getLoginOptions(), SalesforceSDKManager.getInstance().shouldLogoutWhenTokenRevoked()).getRestClient(getActivity(), new ClientManager.RestClientCallback() {
@@ -91,21 +98,39 @@ public class CompanyDocumentsInnerFragment extends Fragment implements SwipeRefr
                                     public void onSuccess(RestRequest request, final RestResponse response) {
                                         mHandler.postDelayed(new Runnable() {
                                             public void run() {
-                                                if (mAdapter == null) {
-                                                    mAdapter = new CustomerDocumentsAdapter(getActivity().getApplicationContext(), (ArrayList<Company_Documents__c>) SFResponseManager.parseCompanyDocumentObject(response.toString()));
-                                                    recyclerView.setAdapter(mAdapter);
-                                                } else {
-                                                    ArrayList<Company_Documents__c> company_documents__cs = (ArrayList<Company_Documents__c>) SFResponseManager.parseCompanyDocumentObject(response.toString());
-                                                    if (company_documents__cs.size() == 0) {
-                                                        recyclerView.setLoadingMore(true);
-                                                        recyclerView.setupMoreListener(null, 0);
-                                                        recyclerView.hideMoreProgress();
-                                                        recyclerView.hideProgress();
+                                                try {
+                                                    if (mAdapter == null) {
+                                                        eServiceDocumentChecklists = (ArrayList<EServices_Document_Checklist__c>) SFResponseManager.parseEServiceDocumentChecklist(response.toString());
+                                                        mAdapter = new TrueCopiesAdapter(getActivity(), getActivity().getApplicationContext(), eServiceDocumentChecklists);
+                                                        recyclerView.setAdapter(mAdapter);
                                                     } else {
-                                                        mAdapter.addAll(company_documents__cs);
-                                                    }
-                                                }
+                                                        ArrayList<EServices_Document_Checklist__c> eServices_document_checklist__cs = (ArrayList<EServices_Document_Checklist__c>) SFResponseManager.parseEServiceDocumentChecklist(response.toString());
+                                                        if (eServices_document_checklist__cs.size() == 0) {
+                                                            recyclerView.setLoadingMore(true);
+                                                            recyclerView.setupMoreListener(null, 0);
+                                                            recyclerView.hideMoreProgress();
+                                                            recyclerView.hideProgress();
+                                                        } else {
+                                                            for (int i = 0; i < eServices_document_checklist__cs.size(); i++) {
+                                                                boolean isFound = false;
+                                                                for (int j = 0; j < eServiceDocumentChecklists.size(); j++) {
+                                                                    if (eServices_document_checklist__cs.get(i).getId().equals(eServiceDocumentChecklists.get(j).getId())) {
+                                                                        isFound = true;
+                                                                        break;
+                                                                    }
+                                                                }
 
+                                                                if (!isFound) {
+                                                                    mAdapter.add(eServices_document_checklist__cs.get(i));
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                } catch (JSONException e) {
+                                                    e.printStackTrace();
+                                                } catch (IOException e) {
+                                                    e.printStackTrace();
+                                                }
                                             }
                                         }, 2000);
                                     }
@@ -129,12 +154,12 @@ public class CompanyDocumentsInnerFragment extends Fragment implements SwipeRefr
     @Override
     public void onMoreAsked(int i, int i1, int i2) {
         offset += 10;
-        CallCustomerDocumentsService(offset, limit);
+        CallTrueCopiesService(offset, limit);
     }
 
     @Override
     public void onRefresh() {
         offset = 0;
-        CallCustomerDocumentsService(offset, limit);
+        CallTrueCopiesService(offset, limit);
     }
 }

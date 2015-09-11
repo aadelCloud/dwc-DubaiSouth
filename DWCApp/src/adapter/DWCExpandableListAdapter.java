@@ -127,7 +127,7 @@ public class DWCExpandableListAdapter extends BaseExpandableListAdapter {
             }
 
             _items.add(new ServiceItem("Show Details", R.drawable.service_show_details));
-            _horizontalServices.setAdapter(new HorizontalListViewAdapter(_visas.get(groupPosition), context, _items));
+            _horizontalServices.setAdapter(new HorizontalListViewAdapter(_visas.get(groupPosition),act, context, _items));
         }
 
         return convertView;

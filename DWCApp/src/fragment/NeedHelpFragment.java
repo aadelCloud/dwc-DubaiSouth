@@ -54,7 +54,7 @@ public class NeedHelpFragment extends Fragment implements View.OnClickListener {
         NeedHelpFragment fragment = new NeedHelpFragment();
         Bundle bundle = new Bundle();
         bundle.putString("FragmentName", s);
-        needHelpValues = new String[]{"Inquiry", "Suggestion", "Compliant"};
+        needHelpValues = new String[]{"Inquiry", "Suggestion", "Complaint"};
         fragment.setArguments(bundle);
         return fragment;
     }

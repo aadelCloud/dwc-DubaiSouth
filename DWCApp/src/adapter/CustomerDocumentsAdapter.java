@@ -1,5 +1,6 @@
 package adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -23,12 +24,14 @@ import utilities.Utilities;
  */
 public class CustomerDocumentsAdapter extends RecyclerView.Adapter<CustomerDocumentsAdapter.ViewHolder> {
 
+    private Activity activity;
     public ArrayList<Company_Documents__c> data;
     Context context;
 
-    public CustomerDocumentsAdapter(Context applicationContext, ArrayList<Company_Documents__c> company_documents__cs) {
+    public CustomerDocumentsAdapter(Activity activity, Context applicationContext, ArrayList<Company_Documents__c> company_documents__cs) {
         this.data = company_documents__cs;
         this.context = applicationContext;
+        this.activity = activity;
     }
 
     @Override
@@ -50,7 +53,7 @@ public class CustomerDocumentsAdapter extends RecyclerView.Adapter<CustomerDocum
         }
         _items.add(new ServiceItem("Edit", R.drawable.edit));
 
-        holder.horizontalServices.setAdapter(new HorizontalListViewAdapter(data.get(position), context, _items));
+        holder.horizontalServices.setAdapter(new HorizontalListViewAdapter(data.get(position), activity, context, _items));
 
         holder.item.setOnClickListener(new View.OnClickListener() {
             @Override

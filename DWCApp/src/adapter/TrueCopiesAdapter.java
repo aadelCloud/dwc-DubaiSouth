@@ -1,5 +1,6 @@
 package adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,12 +23,14 @@ import utilities.Utilities;
  */
 public class TrueCopiesAdapter extends RecyclerView.Adapter<TrueCopiesAdapter.ViewHolder> {
 
+    private Activity activity;
     public ArrayList<EServices_Document_Checklist__c> data;
     Context context;
 
-    public TrueCopiesAdapter(Context context, ArrayList<EServices_Document_Checklist__c> data) {
+    public TrueCopiesAdapter(Activity activity, Context context, ArrayList<EServices_Document_Checklist__c> data) {
         this.data = data;
         this.context = context;
+        this.activity = activity;
     }
 
     @Override
@@ -41,15 +44,16 @@ public class TrueCopiesAdapter extends RecyclerView.Adapter<TrueCopiesAdapter.Vi
         holder.tvTrueCopyName.setText(Utilities.stringNotNull(data.get(position).getName()));
 
         ArrayList<ServiceItem> _items = new ArrayList<>();
-        if (data.get(position).getAvailable_for_Preview__c()) {
-            _items.add(new ServiceItem("Preview", R.drawable.preview));
-        }
 
         if (data.get(position).getOriginal_can_be_Requested__c()) {
             _items.add(new ServiceItem("Request True Copy", R.drawable.copy));
         }
 
-        holder.horizontalServices.setAdapter(new HorizontalListViewAdapter(data.get(position), context, _items));
+        if (data.get(position).getAvailable_for_Preview__c()) {
+            _items.add(new ServiceItem("Preview", R.drawable.preview));
+        }
+
+        holder.horizontalServices.setAdapter(new HorizontalListViewAdapter(data.get(position), activity, context, _items));
 
         holder.item.setOnClickListener(new View.OnClickListener() {
             @Override

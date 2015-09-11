@@ -131,7 +131,7 @@ public class ShowDetailsActivity extends BaseActivity {
                 Services += "," + "License Renewal" + "," + "Cancel Visa";
             }
             _views.add(new DWCView(Services, ItemType.HORIZONTAL_LIST_VIEW));
-            View RenderedViewItems = Utilities.drawViewsOnLayout(_visa, getActivity().getApplicationContext(), _views);
+            View RenderedViewItems = Utilities.drawViewsOnLayout(getActivity(),_visa, getActivity().getApplicationContext(), _views);
             linearLayout.addView(RenderedViewItems);
         }
     }
